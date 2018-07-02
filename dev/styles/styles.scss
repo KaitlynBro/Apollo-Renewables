@@ -1,3 +1,12 @@
+@import 'partials/setup';
+@import 'partials/header';
+@import 'partials/home';
+@import 'partials/commercial';
+@import 'partials/agriculture';
+@import 'partials/about';
+@import 'partials/contact';
+@import 'partials/footer';
+
 body{
 	background-color:rgba(211, 211, 211, 0.4);
 }
