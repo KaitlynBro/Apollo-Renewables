@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,300,400,500");
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
 
@@ -132,5 +133,50 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  header nav .logo-image {
+    max-width: 184px;
+    max-height: 72px;
+    margin-top: 21px;
+    margin-left: 235px; }
+
 body {
-  background-color: rgba(211, 211, 211, 0.4); }
+  font-family: 'Raleway', sans-serif;
+  background: lightgrey; }
+  body h1 {
+    font-size: 53px;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-align: center; }
+  body h2 {
+    font-size: 51px;
+    color: #308ECF;
+    font-weight: 300;
+    text-transform: capitalize;
+    text-align: center; }
+  body h3 {
+    font-size: 30px;
+    color: #EBA634;
+    font-weight: 300;
+    text-transform: capitalize;
+    text-align: center; }
+  body h5 {
+    font-size: 24px;
+    color: #EBA634;
+    font-weight: 300; }
+
+.btn {
+  max-width: 397px;
+  max-height: 57px;
+  background-color: #308ECF;
+  text-decoration: none;
+  padding: 13px 59px;
+  border-radius: 10px;
+  font-size: 19px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500; }

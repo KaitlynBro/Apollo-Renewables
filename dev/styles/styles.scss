@@ -6,7 +6,81 @@
 @import 'partials/about';
 @import 'partials/contact';
 @import 'partials/footer';
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,300,400,500');
+
+// Variables
+$primary-colour:#001C2D;
+$secondary-colour:#308ECF;
+$tertiary-colour:#EBA634;
+$black:#000;
+$white:#fff;
+
+// Mixins
+
+@mixin header-h1{
+	font-size: 53px;
+	color:$white;
+	font-weight: 300;
+	letter-spacing: 0.5px;
+	text-align: center;
+}
+
+@mixin header-h2{
+	font-size: 51px;
+	color:$secondary-colour;
+	font-weight: 300;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+@mixin header-h3{
+	font-size: 30px;
+	color:$tertiary-colour;
+	font-weight: 300;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+
+@mixin header-h5{
+	font-size: 24px;
+	color:$tertiary-colour; 
+	// are the h5s orange or blue? its highlighting text so cant tell
+	font-weight: 300;
+}
+
+@mixin button{
+	max-width:397px;
+	max-height:57px;
+	background-color:$secondary-colour;
+	text-decoration: none;
+	padding: 13px 59px;
+	border-radius: 10px;
+	font-size: 19px;
+	text-transform: uppercase;
+	color:$white;
+	font-weight:500;
+}
+
+// General Styles
 
 body{
-	background-color:rgba(211, 211, 211, 0.4);
+	font-family: 'Raleway', sans-serif;
+	background:lightgrey;
+	h1{
+		@include header-h1;
+	}
+	h2{
+		@include header-h2;
+	}
+	h3{
+		@include header-h3;
+	}
+	h5{
+		@include header-h5;
+	}
+}
+
+.btn{
+	@include button;
 }

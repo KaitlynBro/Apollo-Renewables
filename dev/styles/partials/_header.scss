@@ -1,0 +1,14 @@
+header{
+	nav{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		// background-color:$primary-colour;
+		.logo-image{
+			max-width: 184px;
+			max-height: 72px;
+			margin-top: 21px;
+			margin-left: 235px;
+		}
+	}
+}
