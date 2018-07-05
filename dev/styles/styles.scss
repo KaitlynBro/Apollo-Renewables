@@ -1,4 +1,5 @@
 @import 'partials/setup';
+@import 'utilities/variables';
 @import 'partials/header';
 @import 'partials/home';
 @import 'partials/commercial';
@@ -7,13 +8,6 @@
 @import 'partials/contact';
 @import 'partials/footer';
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,300,400,500');
-
-// Variables
-$primary-colour:#001C2D;
-$secondary-colour:#308ECF;
-$tertiary-colour:#EBA634;
-$black:#000;
-$white:#fff;
 
 // Mixins
 
@@ -45,7 +39,6 @@ $white:#fff;
 @mixin header-h5{
 	font-size: 24px;
 	color:$tertiary-colour; 
-	// are the h5s orange or blue? its highlighting text so cant tell
 	font-weight: 300;
 }
 
