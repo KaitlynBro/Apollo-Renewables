@@ -13,7 +13,7 @@ header{
 		}
 		.nav-items{
 			padding: 0;
-			margin: 0;
+			margin-right: 94px;
 			list-style-type: none;
 			display: flex;
 			width: 37%;
@@ -26,6 +26,9 @@ header{
 				color:$white;
 				font-size:16px;
 				letter-spacing: 1px;
+				&.active{
+					color:#EAA532;
+				}
 			}
 		}
 	}

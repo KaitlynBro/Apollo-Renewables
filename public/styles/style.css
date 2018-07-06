@@ -146,7 +146,7 @@ header nav {
     margin-bottom: 37px; }
   header nav .nav-items {
     padding: 0;
-    margin: 0;
+    margin-right: 94px;
     list-style-type: none;
     display: flex;
     width: 37%;
@@ -159,6 +159,8 @@ header nav {
       color: #fff;
       font-size: 16px;
       letter-spacing: 1px; }
+      header nav .nav-items li a.active {
+        color: #EAA532; }
 
 body {
   font-family: 'Raleway', sans-serif;
