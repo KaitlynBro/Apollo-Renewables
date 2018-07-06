@@ -59,7 +59,7 @@
 
 body{
 	font-family: 'Raleway', sans-serif;
-	background:lightgrey;
+	margin: 0 auto;
 	h1{
 		@include header-h1;
 	}
