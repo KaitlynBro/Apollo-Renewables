@@ -17,6 +17,7 @@
 	font-weight: 300;
 	letter-spacing: 0.5px;
 	text-align: center;
+	letter-spacing: 1px;
 }
 
 @mixin header-h2{
@@ -52,7 +53,7 @@
 	font-size: 19px;
 	text-transform: uppercase;
 	color:$white;
-	font-weight:500;
+	font-weight:300;
 }
 
 // General Styles
@@ -74,6 +75,6 @@ body{
 	}
 }
 
-.btn{
+.bttn{
 	@include button;
 }

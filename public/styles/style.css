@@ -165,11 +165,28 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 header {
   background-size: cover;
   background-repeat: no-repeat;
-  height: 90vh;
-  max-height: 1087px; }
+  height: 73vh;
+  background-position: 100% 100%; }
 
 [id="home"] header {
   background-image: url("../../assets/home-hero.jpg"); }
+  [id="home"] header .header-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(0%, 195%); }
+    [id="home"] header .header-title h1 {
+      text-transform: uppercase;
+      margin-bottom: 55px; }
+    [id="home"] header .header-title .header-buttons {
+      letter-spacing: 0.5px; }
+      [id="home"] header .header-title .header-buttons a:first-of-type {
+        margin-right: 20px; }
+      [id="home"] header .header-title .header-buttons a:last-of-type {
+        margin-left: 20px; }
+      [id="home"] header .header-title .header-buttons a:hover {
+        text-decoration: none;
+        color: #fff; }
 
 [id="home"] [id="home-whySolar"] {
   display: flex;
@@ -199,7 +216,8 @@ body {
     color: #fff;
     font-weight: 300;
     letter-spacing: 0.5px;
-    text-align: center; }
+    text-align: center;
+    letter-spacing: 1px; }
   body h2 {
     font-size: 51px;
     color: #308ECF;
@@ -217,7 +235,7 @@ body {
     color: #EBA634;
     font-weight: 300; }
 
-.btn {
+.bttn {
   max-width: 397px;
   max-height: 57px;
   background-color: #308ECF;
@@ -227,4 +245,4 @@ body {
   font-size: 19px;
   text-transform: uppercase;
   color: #fff;
-  font-weight: 500; }
+  font-weight: 300; }
