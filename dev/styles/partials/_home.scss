@@ -179,6 +179,23 @@
 			}
 		}
 	}
+	[id="home-About"]{
+		background-image:url('../../assets/home-panels.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		padding-top: 109px;
+		padding-bottom: 138px;
+		.home-About-container{
+			display: flex;
+		    flex-direction: column;
+		    align-items: flex-end;
+		    margin: 0;
+		    text-align: right;
+		}
+	}
+	footer{
+		background-color:$primary-colour;
+	}
 }
 
 
