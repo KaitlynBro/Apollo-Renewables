@@ -165,7 +165,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 header {
   background-size: cover;
   background-repeat: no-repeat;
-  height: 73vh;
+  height: 88vh;
   background-position: 100% 100%; }
 
 [id="home"] header {
@@ -193,19 +193,18 @@ header {
   flex-direction: column;
   align-items: center;
   min-height: 709px;
-  padding-top: 247px; }
+  background-image: url("../../assets/home-building.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 100%; }
   [id="home"] [id="home-whySolar"] .home-whySolarBg {
-    background-image: url("../../assets/home-building.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    max-height: 710px;
-    background-position: 100% 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    padding-bottom: 120px; }
   [id="home"] [id="home-whySolar"] .home-whySolar-text-wrapper {
-    margin: 52px 0 90px 0; }
+    margin: 59px 0 90px 0; }
     [id="home"] [id="home-whySolar"] .home-whySolar-text-wrapper h2 {
       color: #308ECF;
       margin: 0 0 32px 0; }
@@ -216,9 +215,51 @@ header {
       font-weight: 300;
       text-align: center; }
   [id="home"] [id="home-whySolar"] .home-whySolar-calculator {
-    background-color: #F7F7F7;
-    width: 739px;
-    height: 403px; }
+    background-color: #606060;
+    max-width: 739px;
+    max-height: 403px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    [id="home"] [id="home-whySolar"] .home-whySolar-calculator h4 {
+      color: #001C2D;
+      letter-spacing: 0.5px;
+      font-weight: 300;
+      text-align: center;
+      margin: 58px 0 40px 0; }
+    [id="home"] [id="home-whySolar"] .home-whySolar-calculator input {
+      max-width: 252px;
+      width: 100%;
+      height: 46px;
+      border-radius: 10px;
+      border: none;
+      font-size: 25px;
+      text-align: center;
+      color: #001C2D;
+      outline: none; }
+    [id="home"] [id="home-whySolar"] .home-whySolar-calculator .home-range-wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 33px; }
+      [id="home"] [id="home-whySolar"] .home-whySolar-calculator .home-range-wrapper .home-range {
+        max-width: 600px; }
+      [id="home"] [id="home-whySolar"] .home-whySolar-calculator .home-range-wrapper p {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        font-weight: 300;
+        font-size: 17px;
+        color: #001C2D;
+        padding-top: 25px; }
+    [id="home"] [id="home-whySolar"] .home-whySolar-calculator .home-range-title {
+      margin-bottom: 0; }
+    [id="home"] [id="home-whySolar"] .home-whySolar-calculator p.home-range-result {
+      font-weight: 700;
+      font-size: 46px;
+      color: #E50A0A; }
 
 body {
   font-family: 'Raleway', sans-serif;

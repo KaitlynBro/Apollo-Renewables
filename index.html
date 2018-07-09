@@ -6,8 +6,6 @@
 	<link rel="stylesheet" type="text/css" href="/public/styles/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </head>
 <body id="home">
 	<div class="header-nav">
@@ -40,12 +38,17 @@
 			</div>
 			<div class="col-lg-12 home-whySolar-calculator">
 				<h4>Current Monthly Electricity Bill</h4>
-				<input type="number">
-				<div>
-				  <input type="range" min="1" value="50">
+				<input type="number" required placeholder="$">
+				<div class="home-range-wrapper">
+				  <input type="range" min="1" value="50" class="home-range">
+				  <p><span>5y</span>
+				  <span>10y</span>
+				  <span>15y</span>
+				  <span>20y</span>
+				  <span>25y</span></p>
 				</div>
-				<h4>Total Electricity Costs:</h4>
-				<p>$44,000<!-- resulting price from electricity calculator lives here --></p>
+				<h4 class="home-range-title">Total Electricity Costs:</h4>
+				<p class="home-range-result">$44,000<!-- resulting price from electricity calculator lives here --></p>
 			</div>
 		</div>
 	</section>
@@ -155,6 +158,9 @@
 	</footer>
 	<!-- Footer -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 	<script src="/public/scripts/app.js"></script>
 </body>
 </html>
