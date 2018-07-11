@@ -320,12 +320,18 @@ header {
   background-size: contain;
   padding-top: 109px;
   padding-bottom: 138px; }
-  [id="home"] [id="home-About"] .home-About-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin: 0;
-    text-align: right; }
+  [id="home"] [id="home-About"] .home-About-wrapper {
+    display: flex; }
+    [id="home"] [id="home-About"] .home-About-wrapper .home-About-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin: 0;
+      text-align: right; }
+      [id="home"] [id="home-About"] .home-About-wrapper .home-About-container p {
+        margin-bottom: 27px; }
+    [id="home"] [id="home-About"] .home-About-wrapper .home-About-container-main {
+      padding-right: 100px; }
 
 [id="home"] footer {
   background-color: #001C2D; }
@@ -368,3 +374,6 @@ body {
   text-transform: uppercase;
   color: #fff;
   font-weight: 300; }
+  .bttn:hover {
+    text-decoration: none;
+    color: #fff; }
