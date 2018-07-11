@@ -36,6 +36,12 @@
 	text-align: center;
 }
 
+@mixin header-h4{
+	font-size: 34px;
+	color:$tertiary-colour; 
+	font-weight: 300;
+}
+
 
 @mixin header-h5{
 	font-size: 24px;
@@ -60,6 +66,17 @@
 	}
 }
 
+@mixin footer-button{
+	background-color: #308ECF;
+    max-width: 200px;
+    max-height: 46px;
+    padding: 14px 40px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 30px;
+}
+
 // General Styles
 
 body{
@@ -74,6 +91,9 @@ body{
 	h3{
 		@include header-h3;
 	}
+	h4{
+		@include header-h4;
+	}
 	h5{
 		@include header-h5;
 	}
@@ -81,4 +101,8 @@ body{
 
 .bttn{
 	@include button;
+}
+
+.footer-button{
+	@include footer-button;
 }

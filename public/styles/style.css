@@ -333,8 +333,33 @@ header {
     [id="home"] [id="home-About"] .home-About-wrapper .home-About-container-main {
       padding-right: 100px; }
 
-[id="home"] footer {
+footer {
   background-color: #001C2D; }
+  footer .footer-links-wrapper {
+    padding-top: 104px; }
+    footer .footer-links-wrapper h4 {
+      text-align: center; }
+    footer .footer-links-wrapper .footer-links {
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      border-bottom: 2px solid #EBA634;
+      padding-bottom: 60px; }
+      footer .footer-links-wrapper .footer-links .footer-links-left, footer .footer-links-wrapper .footer-links .footer-links-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+    footer .footer-links-wrapper .footer-contact {
+      display: flex;
+      flex-direction: row;
+      margin: 0 auto;
+      padding: 120px 0 100px 0; }
+      footer .footer-links-wrapper .footer-contact .footer-contact-list ul {
+        font-weight: 300;
+        font-size: 14px;
+        list-style-type: none;
+        color: #EBA634;
+        line-height: 25px; }
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -358,6 +383,10 @@ body {
     font-weight: 300;
     text-transform: capitalize;
     text-align: center; }
+  body h4 {
+    font-size: 34px;
+    color: #EBA634;
+    font-weight: 300; }
   body h5 {
     font-size: 24px;
     color: #EBA634;
@@ -377,3 +406,13 @@ body {
   .bttn:hover {
     text-decoration: none;
     color: #fff; }
+
+.footer-button {
+  background-color: #308ECF;
+  max-width: 200px;
+  max-height: 46px;
+  padding: 14px 40px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 30px; }
