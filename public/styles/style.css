@@ -136,7 +136,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .header-nav {
   display: flex;
   justify-content: space-between;
-  background-color: #001C2D; }
+  background-color: #001C2D;
+  position: fixed;
+  width: 100%;
+  z-index: 9999; }
   .header-nav .logo-image {
     max-width: 184px;
     max-height: 72px;

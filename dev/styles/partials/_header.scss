@@ -2,6 +2,9 @@
 	display: flex;
 	justify-content:space-between;
 	background-color: $primary-colour;
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
 	.logo-image{
 		max-width: 184px;
 		max-height: 72px;
