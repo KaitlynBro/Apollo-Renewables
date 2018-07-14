@@ -186,22 +186,27 @@ header {
 .home header {
   background-image: url("../../assets/home-hero.jpg"); }
   .home header .header-title {
-    transform: translate(0%, 195%); }
+    transform: translate(0%, 285%); }
     .home header .header-title .header-buttons a:first-of-type {
       margin-right: 20px; }
     .home header .header-title .header-buttons a:last-of-type {
       margin-left: 20px; }
 
+.commercial header .header-title, .agriculture header .header-title {
+  transform: translate(0%, 255%); }
+
 .commercial header, .agriculture header {
-  background-image: url("../../assets/home-hero.jpg"); }
+  background-image: url("../../assets/commercial-hero.jpg"); }
   .commercial header .header-title, .agriculture header .header-title {
-    transform: translate(0%, 15%); }
+    transform: translate(0%, 255%); }
+    .commercial header .header-title h1, .agriculture header .header-title h1 {
+      text-transform: capitalize; }
 
 .home .whySolar {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 709px;
+  max-height: 909px;
   background-image: url("../../assets/home-building.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -213,16 +218,17 @@ header {
     align-items: center;
     padding-bottom: 120px; }
   .home .whySolar .whySolar-text-wrapper {
-    margin: 59px 0 90px 0; }
+    margin: 109px 0 90px 0; }
     .home .whySolar .whySolar-text-wrapper h2 {
       color: #308ECF;
-      margin: 0 0 32px 0; }
+      margin: 0 0 60px 0; }
     .home .whySolar .whySolar-text-wrapper h3 {
-      margin: 0 0 31px 0; }
+      margin: 0 0 21px 0; }
     .home .whySolar .whySolar-text-wrapper p {
       font-size: 21px;
       font-weight: 300;
-      text-align: center; }
+      text-align: center;
+      line-height: 33px; }
   .home .whySolar .whySolar-calculator {
     background-color: #606060;
     max-width: 739px;
@@ -278,12 +284,13 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 120px; }
+  padding-bottom: 50px; }
   .commercial .whySolarBg .Features-container {
-    padding-top: 0; }
+    padding-top: 0;
+    padding-bottom: 0; }
 
 .commercial .whySolar-text-wrapper {
-  margin: 59px 0 90px 0; }
+  margin: 47px 0 17px 0; }
   .commercial .whySolar-text-wrapper h2 {
     color: #308ECF;
     margin: 0 0 32px 0; }
@@ -302,12 +309,13 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 120px; }
+  padding-bottom: 50px; }
   .agriculture .whySolarBg .Features-container {
-    padding-top: 0; }
+    padding-top: 0;
+    padding-bottom: 0; }
 
 .agriculture .whySolar-text-wrapper {
-  margin: 59px 0 90px 0; }
+  margin: 47px 0 17px 0; }
   .agriculture .whySolar-text-wrapper h2 {
     color: #308ECF;
     margin: 0 0 32px 0; }
@@ -352,9 +360,9 @@ header {
     flex-direction: row;
     justify-content: center; }
     .Features .Features-container .Features-row:not(:last-of-type) {
-      margin-bottom: 50px; }
+      margin-bottom: 56px; }
     .Features .Features-container .Features-row:last-of-type {
-      padding-bottom: 99px; }
+      padding-bottom: 61px; }
     .Features .Features-container .Features-row .Features-col-left {
       display: flex;
       flex-direction: column;
@@ -367,6 +375,9 @@ header {
       align-items: flex-start;
       text-align: left;
       margin-left: 35px; }
+
+.home .Features .Features-container {
+  padding-bottom: 93px; }
 
 .Advantages {
   background-color: #001C2D; }
@@ -385,10 +396,12 @@ header {
         margin-right: 40px; }
       .Advantages .Advantages-container .Advantages-row .Advantages-col-right {
         margin-left: 40px; }
-      .Advantages .Advantages-container .Advantages-row img {
-        margin-bottom: 30px; }
+      .Advantages .Advantages-container .Advantages-row .Advantages-image {
+        display: flex;
+        justify-content: center;
+        height: 200px; }
       .Advantages .Advantages-container .Advantages-row h5 {
-        margin-bottom: 35px; }
+        margin-bottom: 25px; }
       .Advantages .Advantages-container .Advantages-row p {
         color: #fff; }
 
@@ -419,6 +432,13 @@ footer {
         list-style-type: none;
         color: #EBA634;
         line-height: 25px; }
+
+.footer-large .footer-links-wrapper {
+  padding-top: 67px; }
+  .footer-large .footer-links-wrapper h4 {
+    margin-bottom: 30px; }
+  .footer-large .footer-links-wrapper .footer-links {
+    padding-bottom: 65px; }
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -475,3 +495,6 @@ body {
   text-transform: uppercase;
   color: white;
   margin-top: 30px; }
+  .footer-button:hover {
+    text-decoration: none;
+    color: #fff; }

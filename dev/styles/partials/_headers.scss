@@ -64,7 +64,7 @@ background-position: 100% 100%;
 	header{
 		background-image:url('../../assets/home-hero.jpg');
 		.header-title{
-			transform: translate(0%, 195%);
+			transform: translate(0%, 285%);
 			.header-buttons{
 				a:first-of-type{
 					margin-right: 20px;
@@ -80,9 +80,21 @@ background-position: 100% 100%;
 // commercial and agriculture header styles
 .commercial,.agriculture{
 	header{
-		background-image:url('../../assets/home-hero.jpg');
 		.header-title{
-			transform: translate(0%, 15%);
+			transform: translate(0%, 255%);
+		}
+	}
+}
+
+// commercial header styles
+.commercial,.agriculture{
+	header{
+		background-image:url('../../assets/commercial-hero.jpg');
+		.header-title{
+			transform: translate(0%, 255%);
+			h1{
+				text-transform: capitalize;
+			}
 		}
 	}
 }

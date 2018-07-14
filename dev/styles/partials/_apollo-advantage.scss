@@ -18,11 +18,14 @@
 		    .Advantages-col-right{
 		    	margin-left: 40px;
 		    }
-		    img{
-		    	margin-bottom: 30px;
+		    .Advantages-image{
+		    	display:flex;
+		    	justify-content:center;
+		    	height:200px;
+
 		    }
 		    h5{
-		    	margin-bottom: 35px;
+		    	margin-bottom: 25px;
 		    }
 		    p{
 		    	color: $white;
