@@ -77,24 +77,58 @@ background-position: 100% 100%;
 	}
 }
 
-// commercial and agriculture header styles
-.commercial,.agriculture{
+// commercial,agriculture,contact,about general header styles
+.commercial,.agriculture,.about,.contact{
+	header{
+		.header-title{
+			h1{
+				text-transform: capitalize;
+			}
+		}
+	}
+}
+
+// commercial,agriculture general header styles
+.commercial,.agriculture,.about,.contact{
 	header{
 		.header-title{
 			transform: translate(0%, 255%);
 		}
 	}
 }
+// about,contact general header styles
+.about,.contact{
+	header{
+		.header-title{
+			transform: translate(0%, 307%);
+		}
+	}
+}
 
 // commercial header styles
-.commercial,.agriculture{
+.commercial{
 	header{
 		background-image:url('../../assets/commercial-hero.jpg');
-		.header-title{
-			transform: translate(0%, 255%);
-			h1{
-				text-transform: capitalize;
-			}
-		}
+	}
+}
+
+// agriculture header styles
+.agriculture{
+	header{
+		background-image:url('../../assets/agriculture-hero.jpg');
+	}
+}
+
+// about header styles
+.about{
+	header{
+		background-image:url('../../assets/about-hero.jpg');
+	}
+}
+
+// contact header styles
+.contact{
+	header{
+		background-image:url('../../assets/contact-hero.jpg');
 	}
 }

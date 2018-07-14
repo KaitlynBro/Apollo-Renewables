@@ -192,15 +192,26 @@ header {
     .home header .header-title .header-buttons a:last-of-type {
       margin-left: 20px; }
 
-.commercial header .header-title, .agriculture header .header-title {
+.commercial header .header-title h1, .agriculture header .header-title h1, .about header .header-title h1, .contact header .header-title h1 {
+  text-transform: capitalize; }
+
+.commercial header .header-title, .agriculture header .header-title, .about header .header-title, .contact header .header-title {
   transform: translate(0%, 255%); }
 
-.commercial header, .agriculture header {
+.about header .header-title, .contact header .header-title {
+  transform: translate(0%, 307%); }
+
+.commercial header {
   background-image: url("../../assets/commercial-hero.jpg"); }
-  .commercial header .header-title, .agriculture header .header-title {
-    transform: translate(0%, 255%); }
-    .commercial header .header-title h1, .agriculture header .header-title h1 {
-      text-transform: capitalize; }
+
+.agriculture header {
+  background-image: url("../../assets/agriculture-hero.jpg"); }
+
+.about header {
+  background-image: url("../../assets/about-hero.jpg"); }
+
+.contact header {
+  background-image: url("../../assets/contact-hero.jpg"); }
 
 .home .whySolar {
   display: flex;
@@ -404,6 +415,47 @@ header {
         margin-bottom: 25px; }
       .Advantages .Advantages-container .Advantages-row p {
         color: #fff; }
+
+.about .about-intro {
+  padding: 82px 0 70px 0; }
+  .about .about-intro .about-intro-wrapper {
+    margin: 0 auto; }
+    .about .about-intro .about-intro-wrapper p {
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 33px;
+      text-align: center; }
+
+.about .about-skyline {
+  padding: 0;
+  width: 100%; }
+  .about .about-skyline img {
+    width: 100%; }
+
+.about .about-story .about-story-wrapper {
+  margin: 0 auto;
+  padding: 65px 0 43px 0;
+  border-bottom: 2px solid #EBA634; }
+  .about .about-story .about-story-wrapper p {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 33px;
+    text-align: center; }
+
+.about .about-story .about-story-contact {
+  padding: 70px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .about .about-story .about-story-contact p {
+    font-weight: 300;
+    font-size: 29px;
+    line-height: 39px;
+    color: #001C2D;
+    text-align: center;
+    max-width: 672px;
+    margin: 0 auto;
+    padding-bottom: 30px; }
 
 footer {
   background-color: #001C2D; }

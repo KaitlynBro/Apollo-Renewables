@@ -1,22 +1,50 @@
-.About{
-	background-repeat: no-repeat;
-	background-size: contain;
-	padding-top: 109px;
-	padding-bottom: 138px;
-	.About-wrapper{
-		display: flex;
-		.About-container{
-			display: flex;
-		    flex-direction: column;
-		    align-items: flex-end;
-		    margin: 0;
-		    text-align: right;
-		    p{
-		    	margin-bottom: 27px;
-		    }
+.about{
+	.about-intro{
+		padding: 82px 0 70px 0;
+		.about-intro-wrapper{
+			margin: 0 auto;
+			p{
+				font-weight: 300;
+			    font-size: 20px;
+			    line-height: 33px;
+			    text-align: center;
+			}
 		}
-		.About-container-main{
-			padding-right: 100px;
+	}
+	.about-skyline{
+		padding: 0;
+		width: 100%;
+		img{
+			width:100%;
+		}
+	}
+	.about-story{
+		.about-story-wrapper{
+			margin: 0 auto;
+			padding: 65px 0 43px 0;
+			border-bottom: 2px solid $tertiary-colour;
+			p{
+				font-weight: 300;
+			    font-size: 20px;
+			    line-height: 33px;
+			    text-align: center;
+			}
+		}
+		.about-story-contact{
+			padding: 70px 0;
+			display: flex;
+			flex-direction:column;
+			align-items:center;
+			p{
+				font-weight: 300;
+			    font-size: 29px;
+			    line-height: 39px;
+			    color: $primary-colour;
+			    text-align: center;
+			    max-width: 672px;
+			    margin: 0 auto;
+			    padding-bottom: 30px;
+			}
 		}
 	}
 }

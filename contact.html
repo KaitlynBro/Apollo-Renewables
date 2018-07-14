@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
-<body id="contact">
+<body class="contact">
 	<div class="header-nav">
 		<img src="assets/main-logo.svg" alt="" class="logo-image">
 			<ul class="nav-items">
@@ -30,12 +30,13 @@
 			<h5>Request an Evaluation</h5>
 			<p>To determine whether or not your business would qualify for solar, complete the form below and one of our brokers will reach out to you shortly.</p>
 			<form action="www.focuspocus.io/magic/924ddcfe4cdf1ec7a6189f7b8e7bd469" method="POST">
-				<label>Your Name <br/><input type="text" required></label><br/>
-				<label>Phone Number <br/><input type="tel" required></label><br/>
-				<label>Email <br/><input type="text" required></label><br/>
-				<label>Address <br/><input type="text" required></label><br/>
-				<label>Current Monthly Electricity Bill <br/><input type="number"></label><br/>
-				​<label>Notes<br/><textarea rows="10" cols="70"></textarea></label>
+				<label>Your Name <br/><input type="text" name="name" required></label><br/>
+				<label>Phone Number <br/><input type="tel" name="phone" required></label><br/>
+				<label>Email <br/><input type="text" name="email" required></label><br/>
+				<label>Address <br/><input type="text" name="address" required></label><br/>
+				<label>Current Monthly Electricity Bill <br/><input type="number" name="bill"></label><br/>
+				​<label>Notes<br/><textarea rows="10" cols="70" name="notes"></textarea></label>
+				<input type="submit" name="submit"></input>
 			</form>
 			<p>If you have any questions, feel free to email us at <span> info@apollorenewables.com</span></p>
 			<p>Or give us a call at <span>647-770-7621</span></p>
