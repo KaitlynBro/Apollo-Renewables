@@ -1,0 +1,32 @@
+.Advantages{
+	background-color: $primary-colour;
+	.Advantages-container{
+		padding:80px 0 70px 0;
+		h2{
+			color:$tertiary-colour;
+		}
+		.Advantages-row{
+			justify-content: center;
+		    align-items: center;
+		    flex-direction: row;
+		    text-align: center;
+		    display: flex;
+		    margin-top: 45px;
+		    .Advantages-col-left{
+		    	margin-right: 40px;
+		    }
+		    .Advantages-col-right{
+		    	margin-left: 40px;
+		    }
+		    img{
+		    	margin-bottom: 30px;
+		    }
+		    h5{
+		    	margin-bottom: 35px;
+		    }
+		    p{
+		    	color: $white;
+		    }
+		}
+	}
+}

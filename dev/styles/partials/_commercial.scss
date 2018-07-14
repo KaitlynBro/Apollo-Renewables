@@ -1,0 +1,41 @@
+.commercial{
+		    .whySolarBg{
+	    	    display: flex;
+		        flex-direction: column;
+		        justify-content: center;
+		        align-items: center;
+		        padding-bottom: 120px;
+		        .Features-container{
+		        	padding-top: 0;
+		        }
+		    }
+			.whySolar-text-wrapper{
+				margin: 59px 0 90px 0;
+				h2{
+					color:$secondary-colour;
+					margin: 0 0 32px 0;
+				}
+				h3{
+					margin: 0 0 31px 0;
+				}
+				p{
+					font-size: 21px;
+					font-weight: 300;
+					text-align: center;
+				}
+			}
+	.About{
+		background-image:url('../../assets/desk.png');
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
