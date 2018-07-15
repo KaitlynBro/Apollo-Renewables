@@ -140,12 +140,21 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   position: fixed;
   width: 100%;
   z-index: 9999; }
+  @media (max-width: 1199px) {
+    .header-nav {
+      position: relative; } }
   .header-nav .logo-image {
     max-width: 184px;
     max-height: 72px;
     margin-top: 23px;
     margin-left: 43px;
     margin-bottom: 27px; }
+    @media (max-width: 1199px) {
+      .header-nav .logo-image {
+        max-width: 140px;
+        max-height: 55px;
+        margin-left: 20px;
+        margin-bottom: 27px; } }
   .header-nav .nav-items {
     padding: 0;
     margin-right: 94px;
@@ -164,12 +173,53 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
       letter-spacing: 1px; }
       .header-nav .nav-items li a.active {
         color: #EAA532; }
+    @media (max-width: 1199px) {
+      .header-nav .nav-items {
+        display: none; } }
+  .header-nav .btn-group {
+    display: none; }
+    .header-nav .btn-group .dropdown-button {
+      padding: 0;
+      font-size: 30px;
+      position: absolute;
+      right: 50px;
+      top: 31px;
+      border: none;
+      background-color: transparent; }
+      .header-nav .btn-group .dropdown-button .fas {
+        color: white; }
+      .header-nav .btn-group .dropdown-button:after {
+        content: none; }
+    @media (max-width: 1199px) {
+      .header-nav .btn-group {
+        display: block; } }
+  .header-nav .btn-group.show {
+    max-height: 104px; }
+  .header-nav .dropdown-menu {
+    position: relative;
+    right: 0;
+    top: 90px;
+    margin: 0;
+    border-radius: 0;
+    background-color: #001C2D;
+    max-width: 215px; }
+    .header-nav .dropdown-menu a {
+      color: #fff;
+      font-size: 19px;
+      font-weight: 500;
+      padding-top: 55px;
+      text-align: right; }
+      .header-nav .dropdown-menu a:last-of-type {
+        padding-bottom: 55px; }
 
 header {
   background-size: cover;
   background-repeat: no-repeat;
   height: 88vh;
-  background-position: 100% 100%; }
+  background-position: center center; }
+  @media (max-width: 1199px) {
+    header {
+      height: 35vh; } }
   header .header-title {
     display: flex;
     flex-direction: column;
@@ -182,11 +232,29 @@ header {
       header .header-title .header-buttons a:hover {
         text-decoration: none;
         color: #fff; }
+    @media (max-width: 991px) {
+      header .header-title h1 {
+        font-size: 37px; }
+      header .header-title .header-buttons {
+        display: flex; }
+        header .header-title .header-buttons a {
+          width: 100%;
+          text-align: center;
+          padding: 25px 60px;
+          max-width: 100%;
+          align-items: center;
+          display: flex;
+          border-radius: 15px;
+          font-size: 14px;
+          font-weight: 500; } }
 
 .home header {
   background-image: url("../../assets/home-hero.jpg"); }
   .home header .header-title {
     transform: translate(0%, 285%); }
+    @media (max-width: 1199px) {
+      .home header .header-title {
+        transform: translate(0%, 95%); } }
     .home header .header-title .header-buttons a:first-of-type {
       margin-right: 20px; }
     .home header .header-title .header-buttons a:last-of-type {
@@ -214,7 +282,7 @@ header {
   background-image: url("../../assets/contact-hero.jpg"); }
 
 .home .whySolar {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   max-height: 909px;
@@ -288,6 +356,7 @@ header {
       color: #E50A0A; }
 
 .home .About {
+  display: none;
   background-image: url("../../assets/home-panels.png"); }
 
 .commercial .whySolarBg {
@@ -359,40 +428,43 @@ header {
         color: #727272;
         margin-bottom: 27px; }
 
-.Features .Features-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-  padding-top: 112px;
-  padding-bottom: 204px; }
-  .Features .Features-container .Features-row {
+.Features {
+  display: none; }
+  .Features .Features-container {
     display: flex;
-    flex-direction: row;
-    justify-content: center; }
-    .Features .Features-container .Features-row:not(:last-of-type) {
-      margin-bottom: 56px; }
-    .Features .Features-container .Features-row:last-of-type {
-      padding-bottom: 61px; }
-    .Features .Features-container .Features-row .Features-col-left {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    padding-top: 112px;
+    padding-bottom: 204px; }
+    .Features .Features-container .Features-row {
       display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      text-align: right;
-      margin-right: 35px; }
-    .Features .Features-container .Features-row .Features-col-right {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      text-align: left;
-      margin-left: 35px; }
+      flex-direction: row;
+      justify-content: center; }
+      .Features .Features-container .Features-row:not(:last-of-type) {
+        margin-bottom: 56px; }
+      .Features .Features-container .Features-row:last-of-type {
+        padding-bottom: 61px; }
+      .Features .Features-container .Features-row .Features-col-left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+        margin-right: 35px; }
+      .Features .Features-container .Features-row .Features-col-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        margin-left: 35px; }
 
 .home .Features .Features-container {
   padding-bottom: 93px; }
 
 .Advantages {
-  background-color: #001C2D; }
+  background-color: #001C2D;
+  display: none; }
   .Advantages .Advantages-container {
     padding: 80px 0 70px 0; }
     .Advantages .Advantages-container h2 {

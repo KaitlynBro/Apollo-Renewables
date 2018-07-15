@@ -6,12 +6,21 @@
 	position: fixed;
 	width: 100%;
 	z-index: 9999;
+	@include media-breakpoint-down(lg){
+		position: relative;
+	}
 	.logo-image{
 		max-width: 184px;
 		max-height: 72px;
 		margin-top: 23px;
 		margin-left: 43px;
 		margin-bottom: 27px;
+		@include media-breakpoint-down(lg){
+			max-width: 140px;
+		    max-height: 55px;
+		    margin-left: 20px;
+		    margin-bottom: 27px;
+		}
 	}
 	.nav-items{
 		padding: 0;
@@ -33,13 +42,62 @@
 				color:#EAA532;
 			}
 		}
+		@include media-breakpoint-down(lg){
+			display: none;
+		}
+	}
+	.btn-group{
+		display: none;
+		.dropdown-button{
+			padding: 0;
+			font-size: 30px;
+			position: absolute;
+			right: 50px;
+			top: 31px;
+			border:none;
+			background-color:transparent;
+			.fas{
+				color: white;
+			}
+			&:after{
+				content: none;
+			}
+		}
+		@include media-breakpoint-down(lg){
+			display: block;
+		}
+	}
+	.btn-group.show{
+		max-height: 104px;
+	}
+	.dropdown-menu{
+		position: relative;
+		right: 0;
+		top: 90px;
+		margin: 0;
+		border-radius: 0;
+		background-color:$primary-colour;
+		max-width: 215px;
+		a{
+			color: $white;
+			font-size: 19px;
+			font-weight: 500;
+			padding-top: 55px;
+			text-align: right;
+			&:last-of-type{
+				padding-bottom: 55px;
+			}
+		}
 	}
 }
 header{
 background-size: cover;
 background-repeat: no-repeat;
 height: 88vh;
-background-position: 100% 100%;
+background-position: center center;
+	@include media-breakpoint-down(lg){
+		height: 35vh;
+	}
 	.header-title{
 		display: flex;
 		flex-direction: column;
@@ -55,7 +113,25 @@ background-position: 100% 100%;
 				color:$white;
 			}
 		}
-
+		@include media-breakpoint-down(md){
+			h1{
+				font-size: 37px;
+			}
+			.header-buttons {
+				display: flex;
+				a{
+					width: 100%;
+					text-align: center;
+				    padding: 25px 60px;
+				    max-width: 100%;
+				    align-items: center;
+				    display: flex;
+				    border-radius: 15px;
+				    font-size: 14px;
+					font-weight: 500;
+				}
+			}
+		}
 	}
 }
 
@@ -65,6 +141,9 @@ background-position: 100% 100%;
 		background-image:url('../../assets/home-hero.jpg');
 		.header-title{
 			transform: translate(0%, 285%);
+			@include media-breakpoint-down(lg){
+				transform: translate(0%, 95%);
+			}
 			.header-buttons{
 				a:first-of-type{
 					margin-right: 20px;

@@ -1,6 +1,7 @@
 .home{
 	.whySolar{
-		display: flex;
+		display: none;
+		// display: flex;
 	    flex-direction: column;
 	    align-items: center;
 	    max-height: 909px;
@@ -87,6 +88,7 @@
 		}
 	}
 	.About{
+		display: none;
 		background-image:url('../../assets/home-panels.png');
 	}
 }
