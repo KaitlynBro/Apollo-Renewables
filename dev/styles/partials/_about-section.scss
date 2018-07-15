@@ -11,12 +11,13 @@
 		    align-items: flex-end;
 		    margin: 0;
 		    text-align: right;
-		    p{
-		    	margin-bottom: 27px;
-		    }
 		}
 		.About-container-main{
 			padding-right: 100px;
+			p{
+				color:$grey;
+				margin-bottom: 27px;
+			}
 		}
 	}
 }

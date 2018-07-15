@@ -353,10 +353,11 @@ header {
       align-items: flex-end;
       margin: 0;
       text-align: right; }
-      .About .About-wrapper .About-container p {
-        margin-bottom: 27px; }
     .About .About-wrapper .About-container-main {
       padding-right: 100px; }
+      .About .About-wrapper .About-container-main p {
+        color: #727272;
+        margin-bottom: 27px; }
 
 .Features .Features-container {
   display: flex;
@@ -456,6 +457,68 @@ header {
     max-width: 672px;
     margin: 0 auto;
     padding-bottom: 30px; }
+  .about .about-story .about-story-contact span.orange-text {
+    color: #EBA634; }
+
+.contact .contact-wrapper .contact-wrapper-form {
+  padding-top: 100px;
+  margin: 0 auto;
+  border-bottom: 2px solid #EBA634;
+  padding-bottom: 60px; }
+  .contact .contact-wrapper .contact-wrapper-form .contact-text h5 {
+    line-height: 28px;
+    margin-bottom: 20px; }
+  .contact .contact-wrapper .contact-wrapper-form .contact-text p {
+    color: #727272;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px; }
+  .contact .contact-wrapper .contact-wrapper-form form {
+    background-color: #001C2D;
+    padding: 40px 0 80px 40px; }
+    .contact .contact-wrapper .contact-wrapper-form form label {
+      color: #fff;
+      font-weight: 400;
+      font-size: 16px;
+      letter-spacing: 0.5px;
+      margin-bottom: 0; }
+    .contact .contact-wrapper .contact-wrapper-form form .notes {
+      margin-bottom: 12px; }
+    .contact .contact-wrapper .contact-wrapper-form form input {
+      margin-top: 11px;
+      margin-bottom: 25px;
+      width: 307px; }
+    .contact .contact-wrapper .contact-wrapper-form form input[type="submit"] {
+      max-width: 149px;
+      display: flex;
+      justify-content: center;
+      color: white;
+      background-color: #308ECF;
+      border: none;
+      border-radius: 10px;
+      padding: 13px 45px;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin-top: 45px; }
+  .contact .contact-wrapper .contact-wrapper-form .contact-text-secondary {
+    margin-top: 60px; }
+    .contact .contact-wrapper .contact-wrapper-form .contact-text-secondary p {
+      line-height: 25px; }
+    .contact .contact-wrapper .contact-wrapper-form .contact-text-secondary span.blue-text {
+      color: #308ECF; }
+    .contact .contact-wrapper .contact-wrapper-form .contact-text-secondary a:hover {
+      text-decoration: none; }
+
+.contact .contact-wrapper .About {
+  background-image: url("../../assets/agriculture-panels.png");
+  margin-top: 50px; }
+  .contact .contact-wrapper .About .orange-text {
+    color: #EBA634;
+    text-transform: uppercase;
+    font-size: 29px;
+    line-height: 39px; }
 
 footer {
   background-color: #001C2D; }
