@@ -88,20 +88,22 @@
 				padding-bottom: 55px;
 			}
 		}
+		.dropdown-item.active{
+			background-color:$primary-colour;
+		}
 	}
 }
 header{
 background-size: cover;
 background-repeat: no-repeat;
-height: 88vh;
 background-position: center center;
-	@include media-breakpoint-down(lg){
-		height: 35vh;
-	}
+@include media-breakpoint-down(sm){
+}
 	.header-title{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		padding: 280px 0 165px 0;
 		h1{
 			text-transform: uppercase;
 			margin-bottom: 55px;
@@ -122,8 +124,7 @@ background-position: center center;
 				a{
 					width: 100%;
 					text-align: center;
-				    padding: 25px 60px;
-				    max-width: 100%;
+				    padding: 10px 27px;
 				    align-items: center;
 				    display: flex;
 				    border-radius: 15px;
@@ -140,9 +141,11 @@ background-position: center center;
 	header{
 		background-image:url('../../assets/home-hero.jpg');
 		.header-title{
-			transform: translate(0%, 285%);
-			@include media-breakpoint-down(lg){
-				transform: translate(0%, 95%);
+			@include media-breakpoint-down(md){
+				padding-top: 140px;
+				h1{
+					margin-bottom: 40px;
+				}
 			}
 			.header-buttons{
 				a:first-of-type{
@@ -150,6 +153,14 @@ background-position: center center;
 				}
 				a:last-of-type{
 					margin-left: 20px;
+				}
+				@include media-breakpoint-down(lg){
+					a:first-of-type{
+						margin-right: 15px;
+					}
+					a:last-of-type{
+						margin-left: 15px;
+					}
 				}
 			}
 		}

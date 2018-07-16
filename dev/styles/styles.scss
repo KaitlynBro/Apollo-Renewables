@@ -20,24 +20,25 @@
 @mixin header-h1{
 	font-size: 53px;
 	color:$white;
-	font-weight: 300;
 	letter-spacing: 0.5px;
 	text-align: center;
 	letter-spacing: 1px;
+	font-family:$font-light;
 }
 
 @mixin header-h2{
 	font-size: 51px;
 	color:$secondary-colour;
-	font-weight: 300;
+	font-family:$font-light;
 	text-transform: capitalize;
 	text-align: center;
+
 }
 
 @mixin header-h3{
 	font-size: 30px;
 	color:$tertiary-colour;
-	font-weight: 300;
+	font-family:$font-light;
 	text-transform: capitalize;
 	text-align: center;
 }
@@ -45,27 +46,25 @@
 @mixin header-h4{
 	font-size: 34px;
 	color:$tertiary-colour; 
-	font-weight: 300;
+	font-family:$font-light;
 }
 
 
 @mixin header-h5{
 	font-size: 24px;
 	color:$tertiary-colour; 
-	font-weight: 300;
+	font-family:$font-light;
 }
 
 @mixin button{
-	max-width:397px;
-	max-height:57px;
 	background-color:$secondary-colour;
 	text-decoration: none;
 	padding: 13px 59px;
-	border-radius: 10px;
+	border-radius: 20px;
 	font-size: 19px;
 	text-transform: uppercase;
 	color:$white;
-	font-weight:300;
+	font-family:$font-light;
 	&:hover{
 		text-decoration: none;
 		color: $white;
@@ -81,6 +80,7 @@
     text-transform: uppercase;
     color: white;
     margin-top: 30px;
+    font-family:$font-light;
     &:hover{
     	text-decoration: none;
     	color: $white;
@@ -90,7 +90,6 @@
 // General Styles
 
 body{
-	font-family: 'Raleway', sans-serif;
 	margin: 0 auto;
 	h1{
 		@include header-h1;
