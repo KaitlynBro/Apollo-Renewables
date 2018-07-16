@@ -1,10 +1,8 @@
 .home{
 	.whySolar{
-		display: none;
-		// display: flex;
+		display: flex;
 	    flex-direction: column;
 	    align-items: center;
-	    max-height: 909px;
     	background-image: url('../../assets/home-building.png');
     	background-size: cover;
 	    background-repeat: no-repeat;
@@ -15,6 +13,9 @@
 	        justify-content: center;
 	        align-items: center;
 	        padding-bottom: 120px;
+	        @include media-breakpoint-down(sm){
+	        	padding-bottom: 90px;
+	        }
 	    }
 		.whySolar-text-wrapper{
 			margin: 109px 0 90px 0;
@@ -31,11 +32,23 @@
 				text-align: center;
 				line-height: 33px;
 			}
+			@include media-breakpoint-down(md){
+				margin: 35px 0 19px 0;
+				h2{
+					margin: 0 0 40px 0;
+					font-size: 32px;
+				}
+				h3{
+					font-size: 17px;
+				}
+				p{
+					font-size: 12px;
+				}
+			}
 		}
 		.whySolar-calculator{
 			background-color:#606060;
 			max-width: 739px;
-			max-height: 403px;
 			display: flex;
 		    flex-direction: column;
 		    align-items: center;
@@ -45,6 +58,10 @@
 			    font-weight: 300;
 			    text-align: center;
 			    margin: 58px 0 40px 0;
+			    @include media-breakpoint-down(md){
+			    	font-size: 16px;
+			    	margin: 35px 0 15px 0;
+			    }
 			}
 			input{
 				max-width: 252px;
@@ -75,15 +92,24 @@
 		    	    font-size: 17px;
 		    	    color: #001C2D;
 		    	    padding-top:25px;
+		    	    @include media-breakpoint-down(sm){
+		    	    	font-size: 10px;
+		    	    }
 			    }
 			}
 			.home-range-title{
 				margin-bottom: 0;
+				@include media-breakpoint-down(sm){
+					margin-top: 5px;
+				}
 			}
 			p.home-range-result{
 				font-weight: 700;
 				font-size: 46px;
 				color: #E50A0A;
+				@include media-breakpoint-down(sm){
+					font-size:26px;
+				}
 			}
 		}
 	}

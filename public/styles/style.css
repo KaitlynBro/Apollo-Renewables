@@ -161,8 +161,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     margin-bottom: 0;
     list-style-type: none;
     display: flex;
-    width: 37%;
-    justify-content: space-evenly;
+    width: 60%;
+    justify-content: flex-end;
     font-weight: 500;
     text-transform: capitalize;
     align-items: center; }
@@ -170,7 +170,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
       text-decoration: none;
       color: #fff;
       font-size: 16px;
-      letter-spacing: 1px; }
+      letter-spacing: 1px;
+      margin: 0 25px; }
       .header-nav .nav-items li a.active {
         color: #EAA532; }
     @media (max-width: 1199px) {
@@ -213,6 +214,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
         padding-bottom: 55px; }
     .header-nav .dropdown-menu .dropdown-item.active {
       background-color: #001C2D; }
+    .header-nav .dropdown-menu a.active-button:hover {
+      background-color: transparent; }
 
 header {
   background-size: cover;
@@ -266,12 +269,6 @@ header {
 .commercial header .header-title h1, .agriculture header .header-title h1, .about header .header-title h1, .contact header .header-title h1 {
   text-transform: capitalize; }
 
-.commercial header .header-title, .agriculture header .header-title, .about header .header-title, .contact header .header-title {
-  transform: translate(0%, 255%); }
-
-.about header .header-title, .contact header .header-title {
-  transform: translate(0%, 307%); }
-
 .commercial header {
   background-image: url("../../assets/commercial-hero.jpg"); }
 
@@ -285,10 +282,9 @@ header {
   background-image: url("../../assets/contact-hero.jpg"); }
 
 .home .whySolar {
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  max-height: 909px;
   background-image: url("../../assets/home-building.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -299,6 +295,9 @@ header {
     justify-content: center;
     align-items: center;
     padding-bottom: 120px; }
+    @media (max-width: 767px) {
+      .home .whySolar .whySolarBg {
+        padding-bottom: 90px; } }
   .home .whySolar .whySolar-text-wrapper {
     margin: 109px 0 90px 0; }
     .home .whySolar .whySolar-text-wrapper h2 {
@@ -311,10 +310,19 @@ header {
       font-weight: 300;
       text-align: center;
       line-height: 33px; }
+    @media (max-width: 991px) {
+      .home .whySolar .whySolar-text-wrapper {
+        margin: 35px 0 19px 0; }
+        .home .whySolar .whySolar-text-wrapper h2 {
+          margin: 0 0 40px 0;
+          font-size: 32px; }
+        .home .whySolar .whySolar-text-wrapper h3 {
+          font-size: 17px; }
+        .home .whySolar .whySolar-text-wrapper p {
+          font-size: 12px; } }
   .home .whySolar .whySolar-calculator {
     background-color: #606060;
     max-width: 739px;
-    max-height: 403px;
     display: flex;
     flex-direction: column;
     align-items: center; }
@@ -324,6 +332,10 @@ header {
       font-weight: 300;
       text-align: center;
       margin: 58px 0 40px 0; }
+      @media (max-width: 991px) {
+        .home .whySolar .whySolar-calculator h4 {
+          font-size: 16px;
+          margin: 35px 0 15px 0; } }
     .home .whySolar .whySolar-calculator input {
       max-width: 252px;
       width: 100%;
@@ -351,12 +363,21 @@ header {
         font-size: 17px;
         color: #001C2D;
         padding-top: 25px; }
+        @media (max-width: 767px) {
+          .home .whySolar .whySolar-calculator .home-range-wrapper p {
+            font-size: 10px; } }
     .home .whySolar .whySolar-calculator .home-range-title {
       margin-bottom: 0; }
+      @media (max-width: 767px) {
+        .home .whySolar .whySolar-calculator .home-range-title {
+          margin-top: 5px; } }
     .home .whySolar .whySolar-calculator p.home-range-result {
       font-weight: 700;
       font-size: 46px;
       color: #E50A0A; }
+      @media (max-width: 767px) {
+        .home .whySolar .whySolar-calculator p.home-range-result {
+          font-size: 26px; } }
 
 .home .About {
   display: none;
