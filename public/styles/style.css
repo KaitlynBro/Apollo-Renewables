@@ -460,14 +460,23 @@ header {
   align-self: center;
   padding-top: 112px;
   padding-bottom: 204px; }
+  @media (max-width: 767px) {
+    .Features .Features-container {
+      padding: 22px 0 35px 0; } }
   .Features .Features-container .Features-row {
     display: flex;
     flex-direction: row;
     justify-content: center; }
     .Features .Features-container .Features-row:not(:last-of-type) {
       margin-bottom: 56px; }
+      @media (max-width: 767px) {
+        .Features .Features-container .Features-row:not(:last-of-type) {
+          margin-bottom: 20px; } }
     .Features .Features-container .Features-row:last-of-type {
       padding-bottom: 61px; }
+      @media (max-width: 767px) {
+        .Features .Features-container .Features-row:last-of-type {
+          padding-bottom: 30px; } }
     .Features .Features-container .Features-row .Features-col-left {
       display: flex;
       flex-direction: column;
@@ -493,7 +502,9 @@ header {
         text-align: center; } }
     @media (max-width: 767px) {
       .Features .Features-container .Features-row .Features-order-0 {
-        order: 0; } }
+        order: 0;
+        margin-top: 15px;
+        width: 95%; } }
     @media (max-width: 767px) {
       .Features .Features-container .Features-row .Features-order-1 {
         order: 1;
@@ -502,13 +513,6 @@ header {
 
 .home .Features .Features-container {
   padding-bottom: 93px; }
-  @media (max-width: 767px) {
-    .home .Features .Features-container {
-      padding: 22px 0 35px 0; }
-      .home .Features .Features-container .Features-row:not(:last-of-type) {
-        margin-bottom: 20px; }
-      .home .Features .Features-container .Features-row:last-of-type {
-        padding-bottom: 30px; } }
 
 .Advantages {
   background-color: #001C2D;

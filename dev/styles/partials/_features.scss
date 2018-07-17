@@ -7,15 +7,24 @@
 		align-self:center;
 		padding-top: 112px;
 		padding-bottom: 204px;
+		@include media-breakpoint-down(sm){
+			padding: 22px 0 35px 0;
+		}
 		.Features-row{
 			display: flex;
 			flex-direction: row;
 			justify-content: center;
 			&:not(:last-of-type){
 				margin-bottom: 56px;
+				@include media-breakpoint-down(sm){
+					margin-bottom: 20px;
+				}
 			}
 			&:last-of-type{
 				padding-bottom: 61px;
+				@include media-breakpoint-down(sm){
+					padding-bottom: 30px;
+				}
 			}
 			.Features-col-left{
 				display: flex;
@@ -47,6 +56,8 @@
 			.Features-order-0{
 				@include media-breakpoint-down(sm){
 					order: 0;
+					margin-top: 15px;
+					width: 95%;
 				}
 			}
 			.Features-order-1{
@@ -63,14 +74,5 @@
 .home .Features{
 	.Features-container{
 		padding-bottom: 93px;
-		@include media-breakpoint-down(sm){
-			padding: 22px 0 35px 0;
-			.Features-row:not(:last-of-type){
-				margin-bottom: 20px;
-			}
-			.Features-row:last-of-type{
-				padding-bottom: 30px;
-			}
-		}
 	}
 }
