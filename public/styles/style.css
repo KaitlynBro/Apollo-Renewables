@@ -515,8 +515,7 @@ header {
   padding-bottom: 93px; }
 
 .Advantages {
-  background-color: #001C2D;
-  display: none; }
+  background-color: #001C2D; }
   .Advantages .Advantages-container {
     padding: 80px 0 70px 0; }
     .Advantages .Advantages-container h2 {
@@ -530,16 +529,33 @@ header {
       margin-top: 45px; }
       .Advantages .Advantages-container .Advantages-row .Advantages-col-left {
         margin-right: 40px; }
+        @media (max-width: 767px) {
+          .Advantages .Advantages-container .Advantages-row .Advantages-col-left {
+            margin-right: 0; } }
       .Advantages .Advantages-container .Advantages-row .Advantages-col-right {
         margin-left: 40px; }
+        @media (max-width: 767px) {
+          .Advantages .Advantages-container .Advantages-row .Advantages-col-right {
+            margin-left: 0; } }
       .Advantages .Advantages-container .Advantages-row .Advantages-image {
         display: flex;
         justify-content: center;
         height: 200px; }
+        @media (max-width: 767px) {
+          .Advantages .Advantages-container .Advantages-row .Advantages-image {
+            height: 160px;
+            margin-bottom: 15px; } }
       .Advantages .Advantages-container .Advantages-row h5 {
         margin-bottom: 25px; }
       .Advantages .Advantages-container .Advantages-row p {
         color: #fff; }
+        @media (max-width: 767px) {
+          .Advantages .Advantages-container .Advantages-row p {
+            width: 90%;
+            margin: 0 auto; } }
+      @media (max-width: 767px) {
+        .Advantages .Advantages-container .Advantages-row .Advantages-block {
+          margin-bottom: 37px; } }
 
 .about .about-intro {
   padding: 82px 0 70px 0; }
