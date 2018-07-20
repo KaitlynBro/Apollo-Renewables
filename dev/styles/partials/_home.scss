@@ -114,8 +114,10 @@
 		}
 	}
 	.About{
-		display: none;
 		background-image:url('../../assets/home-panels.png');
+		@include media-breakpoint-down(sm){
+			background-image:none;
+		}
 	}
 }
 

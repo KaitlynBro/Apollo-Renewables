@@ -380,8 +380,10 @@ header {
           font-size: 26px; } }
 
 .home .About {
-  display: none;
   background-image: url("../../assets/home-panels.png"); }
+  @media (max-width: 767px) {
+    .home .About {
+      background-image: none; } }
 
 .commercial .whySolarBg {
   display: flex;
@@ -446,11 +448,24 @@ header {
       align-items: flex-end;
       margin: 0;
       text-align: right; }
+    @media (max-width: 767px) {
+      .About .About-wrapper .About-container-image {
+        background-image: url(../../assets/home-panels.png);
+        background-size: cover;
+        min-height: 280px;
+        order: 1;
+        background-repeat: no-repeat; } }
     .About .About-wrapper .About-container-main {
       padding-right: 100px; }
       .About .About-wrapper .About-container-main p {
         color: #727272;
         margin-bottom: 27px; }
+      @media (max-width: 767px) {
+        .About .About-wrapper .About-container-main {
+          padding-right: 0; } }
+    @media (max-width: 767px) {
+      .About .About-wrapper {
+        flex-direction: column; } }
 
 .Features .Features-container {
   display: flex;
@@ -529,33 +544,36 @@ header {
       margin-top: 45px; }
       .Advantages .Advantages-container .Advantages-row .Advantages-col-left {
         margin-right: 40px; }
-        @media (max-width: 767px) {
+        @media (max-width: 991px) {
           .Advantages .Advantages-container .Advantages-row .Advantages-col-left {
             margin-right: 0; } }
       .Advantages .Advantages-container .Advantages-row .Advantages-col-right {
         margin-left: 40px; }
-        @media (max-width: 767px) {
+        @media (max-width: 991px) {
           .Advantages .Advantages-container .Advantages-row .Advantages-col-right {
             margin-left: 0; } }
       .Advantages .Advantages-container .Advantages-row .Advantages-image {
         display: flex;
         justify-content: center;
         height: 200px; }
-        @media (max-width: 767px) {
+        @media (max-width: 991px) {
           .Advantages .Advantages-container .Advantages-row .Advantages-image {
             height: 160px;
-            margin-bottom: 15px; } }
+            margin-bottom: 23px; } }
       .Advantages .Advantages-container .Advantages-row h5 {
         margin-bottom: 25px; }
       .Advantages .Advantages-container .Advantages-row p {
         color: #fff; }
-        @media (max-width: 767px) {
+        @media (max-width: 991px) {
           .Advantages .Advantages-container .Advantages-row p {
             width: 90%;
             margin: 0 auto; } }
-      @media (max-width: 767px) {
-        .Advantages .Advantages-container .Advantages-row .Advantages-block {
-          margin-bottom: 37px; } }
+      @media (max-width: 991px) {
+        .Advantages .Advantages-container .Advantages-row {
+          margin: 0 auto;
+          width: 100%; }
+          .Advantages .Advantages-container .Advantages-row .Advantages-block {
+            margin-bottom: 55px; } }
 
 .about .about-intro {
   padding: 82px 0 70px 0; }

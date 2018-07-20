@@ -12,12 +12,27 @@
 		    margin: 0;
 		    text-align: right;
 		}
+		.About-container-image{
+			@include media-breakpoint-down(sm){
+				background-image: url(../../assets/home-panels.png);
+			    background-size: cover;
+			    min-height: 280px;
+			    order: 1;
+			    background-repeat: no-repeat;
+			}
+		}
 		.About-container-main{
 			padding-right: 100px;
 			p{
 				color:$grey;
 				margin-bottom: 27px;
 			}
+			@include media-breakpoint-down(sm){
+				padding-right:0;
+			}
+		}
+		@include media-breakpoint-down(sm){
+			flex-direction:column;
 		}
 	}
 }
