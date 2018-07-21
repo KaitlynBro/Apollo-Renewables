@@ -27,14 +27,16 @@
 		}
 	.About{
 		background-image:url('../../assets/agriculture-panels.png');
+		@include media-breakpoint-down(sm){
+			background-image:none;
+			.About-wrapper{
+				.About-container-image{
+					background-image:url('../../assets/agriculture-panels.png');
+				}
+			}
+		}
 	}
 }
-
-
-
-
-
-
 
 
 

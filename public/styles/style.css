@@ -383,7 +383,9 @@ header {
   background-image: url("../../assets/home-panels.png"); }
   @media (max-width: 767px) {
     .home .About {
-      background-image: none; } }
+      background-image: none; }
+      .home .About .About-wrapper .About-container-image {
+        background-image: url("../../assets/home-panels.png"); } }
 
 .commercial .whySolarBg {
   display: flex;
@@ -409,6 +411,11 @@ header {
 
 .commercial .About {
   background-image: url("../../assets/desk.png"); }
+  @media (max-width: 767px) {
+    .commercial .About {
+      background-image: none; }
+      .commercial .About .About-wrapper .About-container-image {
+        background-image: url("../../assets/desk.png"); } }
 
 .agriculture .whySolarBg {
   display: flex;
@@ -434,6 +441,11 @@ header {
 
 .agriculture .About {
   background-image: url("../../assets/agriculture-panels.png"); }
+  @media (max-width: 767px) {
+    .agriculture .About {
+      background-image: none; }
+      .agriculture .About .About-wrapper .About-container-image {
+        background-image: url("../../assets/agriculture-panels.png"); } }
 
 .About {
   background-repeat: no-repeat;
@@ -450,7 +462,6 @@ header {
       text-align: right; }
     @media (max-width: 767px) {
       .About .About-wrapper .About-container-image {
-        background-image: url(../../assets/home-panels.png);
         background-size: cover;
         min-height: 312px;
         order: 1;
