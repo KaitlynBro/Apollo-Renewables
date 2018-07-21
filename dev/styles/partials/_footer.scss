@@ -40,9 +40,36 @@ footer{
 		}
 		.footer-links{
 			padding-bottom: 65px;
+			@include media-breakpoint-down(sm){
+				flex-direction:column;
+				.footer-links-left{
+					margin-bottom:55px;
+				}
+			}
 		}
 		.footer-contact{
 			padding: 120px 0 100px 0;
+			@include media-breakpoint-down(md){
+				.footer-contact-logo{
+					display: flex;
+					justify-content:center;
+					align-items:flex-start;
+					padding-bottom: 25px;
+				}
+			}
+			@include media-breakpoint-down(sm){
+				flex-direction:column;
+				padding: 25px 0 0 0;
+				.footer-contact-list{
+					order:1;
+					ul{
+						padding: 0;
+					}
+				}
+			}
+		}
+		@include media-breakpoint-down(sm){
+			padding: 78px 0 23px 0;
 		}
 	}
 }
