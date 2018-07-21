@@ -16,7 +16,7 @@
 			@include media-breakpoint-down(sm){
 				background-image: url(../../assets/home-panels.png);
 			    background-size: cover;
-			    min-height: 280px;
+			    min-height: 312px;
 			    order: 1;
 			    background-repeat: no-repeat;
 			}
@@ -26,13 +26,32 @@
 			p{
 				color:$grey;
 				margin-bottom: 27px;
+				@include media-breakpoint-down(sm){
+					width: 84%;
+				}
 			}
 			@include media-breakpoint-down(sm){
-				padding-right:0;
+				padding:50px 0 0;
+				margin: 0 auto;
+				text-align: center;
+			    // width: 84%;
+			    display: flex;
+			    flex-direction: column;
+			    align-items: center;
+			    margin: 0 auto;
+			    font-size: 14px;
+			    a{
+			    	padding: 5px 30px;
+			    	border-radius: 10px;
+			    }
 			}
 		}
-		@include media-breakpoint-down(sm){
+		@include media-breakpoint-down(lg){
 			flex-direction:column;
+			align-items:flex-end;
 		}
+	}
+	@include media-breakpoint-down(sm){
+		padding: 0;
 	}
 }

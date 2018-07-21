@@ -452,7 +452,7 @@ header {
       .About .About-wrapper .About-container-image {
         background-image: url(../../assets/home-panels.png);
         background-size: cover;
-        min-height: 280px;
+        min-height: 312px;
         order: 1;
         background-repeat: no-repeat; } }
     .About .About-wrapper .About-container-main {
@@ -460,12 +460,29 @@ header {
       .About .About-wrapper .About-container-main p {
         color: #727272;
         margin-bottom: 27px; }
+        @media (max-width: 767px) {
+          .About .About-wrapper .About-container-main p {
+            width: 84%; } }
       @media (max-width: 767px) {
         .About .About-wrapper .About-container-main {
-          padding-right: 0; } }
-    @media (max-width: 767px) {
+          padding: 50px 0 0;
+          margin: 0 auto;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 0 auto;
+          font-size: 14px; }
+          .About .About-wrapper .About-container-main a {
+            padding: 5px 30px;
+            border-radius: 10px; } }
+    @media (max-width: 1199px) {
       .About .About-wrapper {
-        flex-direction: column; } }
+        flex-direction: column;
+        align-items: flex-end; } }
+  @media (max-width: 767px) {
+    .About {
+      padding: 0; } }
 
 .Features .Features-container {
   display: flex;
