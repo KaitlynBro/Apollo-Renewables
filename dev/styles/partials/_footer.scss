@@ -34,7 +34,6 @@ footer{
 
 .footer-large{
 	.footer-links-wrapper{
-		padding-top: 67px;
 		h4{
 			margin-bottom: 30px;
 		}
@@ -62,6 +61,7 @@ footer{
 				padding: 25px 0 0 0;
 				.footer-contact-list{
 					order:1;
+					text-align: center;
 					ul{
 						padding: 0;
 					}

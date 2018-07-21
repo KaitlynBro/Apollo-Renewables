@@ -164,6 +164,18 @@ background-position: center center;
 						margin-left: 15px;
 					}
 				}
+				@media(max-width:330px){
+					flex-direction:column;
+					a:first-of-type{
+						margin-right: 0;
+					}
+					a:last-of-type{
+						margin-left: 0;
+					}
+					a:first-of-type{
+						margin-bottom:20px;
+					}
+				}
 			}
 		}
 	}
