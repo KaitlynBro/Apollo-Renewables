@@ -328,7 +328,8 @@ header {
         .home .whySolar .whySolar-text-wrapper h3 {
           font-size: 17px; }
         .home .whySolar .whySolar-text-wrapper p {
-          font-size: 12px; } }
+          font-size: 12px;
+          line-height: 20px; } }
   .home .whySolar .whySolar-calculator {
     background-color: #606060;
     max-width: 739px;
@@ -396,6 +397,14 @@ header {
       .home .About .About-wrapper .About-container-image {
         background-image: url("../../assets/home-panels.png"); } }
 
+@media (max-width: 767px) {
+  .commercial header .header-title .header-buttons {
+    display: none; } }
+
+@media (max-width: 767px) {
+  .commercial header .header-title {
+    padding: 163px 0 105px 0; } }
+
 .commercial .whySolarBg {
   display: flex;
   flex-direction: column;
@@ -426,6 +435,24 @@ header {
       .commercial .About .About-wrapper .About-container-image {
         background-image: url("../../assets/desk.png"); } }
 
+.commercial .footer-large {
+  display: none; }
+  @media (max-width: 991px) {
+    .commercial .footer-large {
+      display: block; } }
+
+@media (max-width: 991px) {
+  .commercial .footer-small {
+    display: none; } }
+
+@media (max-width: 767px) {
+  .agriculture header .header-title .header-buttons {
+    display: none; } }
+
+@media (max-width: 767px) {
+  .agriculture header .header-title {
+    padding: 163px 0 105px 0; } }
+
 .agriculture .whySolarBg {
   display: flex;
   flex-direction: column;
@@ -455,6 +482,16 @@ header {
       background-image: none; }
       .agriculture .About .About-wrapper .About-container-image {
         background-image: url("../../assets/agriculture-panels.png"); } }
+
+.agriculture .footer-large {
+  display: none; }
+  @media (max-width: 991px) {
+    .agriculture .footer-large {
+      display: block; } }
+
+@media (max-width: 991px) {
+  .agriculture .footer-small {
+    display: none; } }
 
 .About {
   background-repeat: no-repeat;
@@ -528,7 +565,7 @@ header {
       padding-bottom: 61px; }
       @media (max-width: 767px) {
         .Features .Features-container .Features-row:last-of-type {
-          padding-bottom: 30px; } }
+          padding-bottom: 23px; } }
     .Features .Features-container .Features-row .Features-col-left {
       display: flex;
       flex-direction: column;
@@ -562,9 +599,15 @@ header {
         order: 1;
         margin-top: 15px;
         width: 95%; } }
+    @media (max-width: 767px) {
+      .Features .Features-container .Features-row h5 {
+        font-size: 19px; }
+      .Features .Features-container .Features-row p {
+        font-size: 14px;
+        line-height: 19px; } }
 
 .home .Features .Features-container {
-  padding-bottom: 93px; }
+  padding-bottom: 50px; }
 
 .Advantages {
   background-color: #001C2D; }
@@ -598,19 +641,30 @@ header {
             height: 160px;
             margin-bottom: 23px; } }
       .Advantages .Advantages-container .Advantages-row h5 {
-        margin-bottom: 25px; }
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        width: 30%;
+        margin: 0 auto; }
+        @media (max-width: 767px) {
+          .Advantages .Advantages-container .Advantages-row h5 {
+            width: 100%; } }
       .Advantages .Advantages-container .Advantages-row p {
         color: #fff; }
         @media (max-width: 991px) {
           .Advantages .Advantages-container .Advantages-row p {
             width: 90%;
-            margin: 0 auto; } }
+            margin: 0 auto;
+            font-size: 15px; } }
       @media (max-width: 991px) {
         .Advantages .Advantages-container .Advantages-row {
           margin: 0 auto;
           width: 100%; }
           .Advantages .Advantages-container .Advantages-row .Advantages-block {
             margin-bottom: 55px; } }
+
+@media (max-width: 767px) {
+  .about header .header-title {
+    padding: 163px 0 105px 0; } }
 
 .about .about-intro {
   padding: 82px 0 70px 0; }
@@ -654,6 +708,10 @@ header {
     padding-bottom: 30px; }
   .about .about-story .about-story-contact span.orange-text {
     color: #EBA634; }
+
+@media (max-width: 767px) {
+  .contact header .header-title {
+    padding: 163px 0 105px 0; } }
 
 .contact .contact-wrapper .contact-wrapper-form {
   padding-top: 100px;
@@ -790,6 +848,9 @@ body {
     font-family: "MuseoSans-300";
     text-transform: capitalize;
     text-align: center; }
+    @media (max-width: 767px) {
+      body h2 {
+        font-size: 32px; } }
   body h3 {
     font-size: 30px;
     color: #EBA634;
@@ -804,6 +865,9 @@ body {
     font-size: 24px;
     color: #EBA634;
     font-family: "MuseoSans-300"; }
+    @media (max-width: 767px) {
+      body h5 {
+        font-size: 19px; } }
 
 .bttn {
   background-color: #308ECF;
@@ -817,6 +881,10 @@ body {
   .bttn:hover {
     text-decoration: none;
     color: #fff; }
+  @media (max-width: 767px) {
+    .bttn {
+      font-size: 14px;
+      padding: 6px 29px; } }
 
 .footer-button {
   background-color: #308ECF;

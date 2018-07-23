@@ -1,4 +1,11 @@
 .contact{
+	header{
+		.header-title{
+			@include media-breakpoint-down(sm){
+				padding:163px 0 105px 0;
+			}
+		}
+	}
 	.contact-wrapper{
 		.contact-wrapper-form{
 			padding-top: 100px;

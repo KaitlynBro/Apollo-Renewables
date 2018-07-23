@@ -1,4 +1,11 @@
 .about{
+	header{
+		.header-title{
+			@include media-breakpoint-down(sm){
+				padding:163px 0 105px 0;
+			}
+		}
+	}
 	.about-intro{
 		padding: 82px 0 70px 0;
 		.about-intro-wrapper{

@@ -1,4 +1,16 @@
 .commercial{
+	header{
+		.header-title{
+			.header-buttons{
+				@include media-breakpoint-down(sm){
+					display: none;
+				}
+			}
+			@include media-breakpoint-down(sm){
+				padding:163px 0 105px 0;
+			}
+		}
+	}
     .whySolarBg{
 	    display: flex;
         flex-direction: column;
@@ -34,6 +46,17 @@
 					background-image:url('../../assets/desk.png');
 				}
 			}
+		}
+	}
+	.footer-large{
+		display: none;
+		@include media-breakpoint-down(md){
+			display: block;
+		}
+	}
+	.footer-small{
+		@include media-breakpoint-down(md){
+			display:none;
 		}
 	}
 }

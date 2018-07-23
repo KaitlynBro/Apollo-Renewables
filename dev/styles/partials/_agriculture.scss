@@ -1,30 +1,42 @@
 .agriculture{
-	    .whySolarBg{
-    	    display: flex;
-	        flex-direction: column;
-	        justify-content: center;
-	        align-items: center;
-	        padding-bottom: 50px;
-	        .Features-container{
-	        	padding-top: 0;
-	        	padding-bottom: 0;
-	        }
-	    }
-		.whySolar-text-wrapper{
-			margin: 47px 0 17px 0;
-			h2{
-				color:$secondary-colour;
-				margin: 0 0 32px 0;
+	header{
+		.header-title{
+			.header-buttons{
+				@include media-breakpoint-down(sm){
+					display: none;
+				}
 			}
-			h3{
-				margin: 0 0 31px 0;
-			}
-			p{
-				font-size: 21px;
-				font-weight: 300;
-				text-align: center;
+			@include media-breakpoint-down(sm){
+				padding:163px 0 105px 0;
 			}
 		}
+	}
+    .whySolarBg{
+	    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
+        .Features-container{
+        	padding-top: 0;
+        	padding-bottom: 0;
+        }
+    }
+	.whySolar-text-wrapper{
+		margin: 47px 0 17px 0;
+		h2{
+			color:$secondary-colour;
+			margin: 0 0 32px 0;
+		}
+		h3{
+			margin: 0 0 31px 0;
+		}
+		p{
+			font-size: 21px;
+			font-weight: 300;
+			text-align: center;
+		}
+	}
 	.About{
 		background-image:url('../../assets/agriculture-panels.png');
 		@include media-breakpoint-down(sm){
@@ -34,6 +46,17 @@
 					background-image:url('../../assets/agriculture-panels.png');
 				}
 			}
+		}
+	}
+	.footer-large{
+		display: none;
+		@include media-breakpoint-down(md){
+			display: block;
+		}
+	}
+	.footer-small{
+		@include media-breakpoint-down(md){
+			display:none;
 		}
 	}
 }

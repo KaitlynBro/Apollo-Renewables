@@ -23,7 +23,7 @@
 			&:last-of-type{
 				padding-bottom: 61px;
 				@include media-breakpoint-down(sm){
-					padding-bottom: 30px;
+					padding-bottom: 23px;
 				}
 			}
 			.Features-col-left{
@@ -67,12 +67,21 @@
 					width: 95%;
 				}
 			}
+			@include media-breakpoint-down(sm){
+				h5{
+					font-size: 19px;
+				}
+				p{
+					font-size: 14px;
+					line-height: 19px;
+				}
+			}
 		}
 	}
 }
 
 .home .Features{
 	.Features-container{
-		padding-bottom: 93px;
+		padding-bottom: 50px;
 	}
 }
