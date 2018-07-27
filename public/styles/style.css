@@ -759,7 +759,6 @@ header {
 .contact .contact-wrapper .contact-wrapper-form {
   padding-top: 100px;
   margin: 0 auto;
-  border-bottom: 2px solid #EBA634;
   padding-bottom: 60px; }
   .contact .contact-wrapper .contact-wrapper-form .contact-text h5 {
     line-height: 28px;
@@ -800,23 +799,41 @@ header {
       margin-top: 45px; }
     .contact .contact-wrapper .contact-wrapper-form form .textarea {
       max-width: 100%; }
-  .contact .contact-wrapper .contact-wrapper-form .contact-text-secondary {
-    margin-top: 60px; }
-    .contact .contact-wrapper .contact-wrapper-form .contact-text-secondary p {
-      line-height: 25px; }
-    .contact .contact-wrapper .contact-wrapper-form .contact-text-secondary span.blue-text {
-      color: #308ECF; }
-    .contact .contact-wrapper .contact-wrapper-form .contact-text-secondary a:hover {
-      text-decoration: none; }
 
-.contact .contact-wrapper .About {
-  background-image: url("../../assets/agriculture-panels.png");
-  margin-top: 50px; }
-  .contact .contact-wrapper .About .orange-text {
+.contact .contact-wrapper .contact-text-secondary {
+  margin: 0 auto; }
+  .contact .contact-wrapper .contact-text-secondary p {
+    line-height: 25px;
+    border-bottom: 2px solid #EBA634;
+    padding-bottom: 50px; }
+    @media (max-width: 767px) {
+      .contact .contact-wrapper .contact-text-secondary p {
+        font-size: 14px;
+        text-align: center; } }
+  .contact .contact-wrapper .contact-text-secondary span.blue-text {
+    color: #308ECF; }
+  .contact .contact-wrapper .contact-text-secondary a:hover {
+    text-decoration: none; }
+
+.contact .About {
+  background-image: url("../../assets/agriculture-panels.png"); }
+  .contact .About .orange-text {
+    display: none;
     color: #EBA634;
     text-transform: uppercase;
     font-size: 29px;
     line-height: 39px; }
+    @media (max-width: 767px) {
+      .contact .About .orange-text {
+        display: block; } }
+  @media (max-width: 767px) {
+    .contact .About .bttn {
+      display: none; } }
+  @media (max-width: 767px) {
+    .contact .About {
+      background-image: none; }
+      .contact .About .About-wrapper .About-container-image {
+        background-image: url("../../assets/agriculture-panels.png"); } }
 
 .contact .footer-large {
   display: none; }
