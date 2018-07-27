@@ -57,6 +57,9 @@
 				    letter-spacing: 1px;
 				    margin-top: 45px;
 				}
+				.textarea{
+					max-width: 100%;
+				}
 			}
 			.contact-text-secondary{
 				margin-top: 60px;
@@ -80,6 +83,17 @@
 				font-size: 29px;
 				line-height: 39px;
 			}
+		}
+	}
+	.footer-large{
+		display: none;
+		@include media-breakpoint-down(lg){
+			display: block;
+		}
+	}
+	.footer-small{
+		@include media-breakpoint-down(lg){
+			display:none;
 		}
 	}
 }

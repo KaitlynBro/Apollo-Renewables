@@ -12,6 +12,7 @@
 		    text-align: center;
 		    display: flex;
 		    margin-top: 45px;
+		    max-width: 100%;
 		    .Advantages-col-left{
 		    	margin-right: 40px;
 		    	@include media-breakpoint-down(md){
@@ -41,6 +42,7 @@
 		    	margin: 0 auto;
 		    	@include media-breakpoint-down(sm){
 		    		width: 100%;
+		    		margin-bottom: 27px;
 		    	}
 		    }
 		    p{

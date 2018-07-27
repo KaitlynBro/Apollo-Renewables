@@ -15,6 +15,12 @@
 			    font-size: 20px;
 			    line-height: 33px;
 			    text-align: center;
+			    @include media-breakpoint-down(sm){
+			    	font-size: 12px;
+			    }
+			}
+			@include media-breakpoint-down(sm){
+				max-width: 90%;
 			}
 		}
 	}
@@ -23,18 +29,36 @@
 		width: 100%;
 		img{
 			width:100%;
+			@include media-breakpoint-down(sm){
+				display: none;
+			}
+		}
+		@include media-breakpoint-down(sm){
+			background-image: url('../../assets/about-skyline.png');
+		    height: 242px;
+		    background-size: 240%;
+		    background-position: center center;
+		    background-repeat: no-repeat;
 		}
 	}
 	.about-story{
+		padding: 65px 0 43px 0;
 		.about-story-wrapper{
 			margin: 0 auto;
-			padding: 65px 0 43px 0;
 			border-bottom: 2px solid $tertiary-colour;
+			padding-bottom: 75px;
 			p{
 				font-weight: 300;
 			    font-size: 20px;
 			    line-height: 33px;
 			    text-align: center;
+			    @include media-breakpoint-down(sm){
+			    	font-size: 12px;
+			    }
+			}
+			@include media-breakpoint-down(sm){
+				padding-bottom:43px;
+				max-width: 90%;
 			}
 		}
 		.about-story-contact{
@@ -51,10 +75,28 @@
 			    max-width: 672px;
 			    margin: 0 auto;
 			    padding-bottom: 30px;
+			    @include media-breakpoint-down(sm){
+			    	font-size: 19px;
+			    	max-width:80%;
+			    }
 			}
 			span.orange-text{
 				color:$tertiary-colour;
+				@include media-breakpoint-down(sm){
+					display: block;
+				}
 			}
+		}
+	}
+	.footer-large{
+		display: none;
+		@include media-breakpoint-down(md){
+			display: block;
+		}
+	}
+	.footer-small{
+		@include media-breakpoint-down(md){
+			display:none;
 		}
 	}
 }

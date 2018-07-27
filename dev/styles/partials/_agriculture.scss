@@ -50,12 +50,12 @@
 	}
 	.footer-large{
 		display: none;
-		@include media-breakpoint-down(md){
+		@include media-breakpoint-down(lg){
 			display: block;
 		}
 	}
 	.footer-small{
-		@include media-breakpoint-down(md){
+		@include media-breakpoint-down(lg){
 			display:none;
 		}
 	}
