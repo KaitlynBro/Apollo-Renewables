@@ -32,8 +32,10 @@
 		    	@include media-breakpoint-down(md){
 		    		height: 160px;
 		    		margin-bottom: 23px;
+		    		&:first-of-type{
+		    			align-items:flex-end;
+		    		}
 		    	}
-
 		    }
 		    h5{
 		    	margin-bottom: 25px;
@@ -51,6 +53,10 @@
 		    		width: 90%;
 		    		margin: 0 auto;
 		    		font-size: 15px;
+		    		margin-top:10px;
+		    	}
+		    	@include media-breakpoint-down(sm){
+		    		margin-top:0;
 		    	}
 		    }
 		    @include media-breakpoint-down(md){

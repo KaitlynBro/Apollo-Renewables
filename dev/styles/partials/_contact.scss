@@ -11,6 +11,11 @@
 			padding-top: 100px;
 			margin: 0 auto;
 			padding-bottom: 60px;
+			@include media-breakpoint-down(sm){
+				background-color:$primary-colour;
+				padding-top:52px;
+				padding-bottom:76px;
+			}
 			.contact-text{
 				h5{
 					line-height: 28px;
@@ -21,11 +26,20 @@
 					font-size: 18px;
 				    font-weight: 300;
 				    line-height: 25px;
+				    @include media-breakpoint-down(sm){
+				    	font-size:14px;
+				    }
+				}
+				@include media-breakpoint-down(sm){
+					padding:0;
 				}
 			} 
 			form{
 				background-color:$primary-colour;
 				padding:40px 0 80px 40px;
+				@include media-breakpoint-down(sm){
+					padding: 0;
+				}
 				label{
 					color:$white;
 				    font-weight: 400;
@@ -58,6 +72,9 @@
 				}
 				.textarea{
 					max-width: 100%;
+					@include media-breakpoint-down(sm){
+						max-width: 95%;
+					}
 				}
 			}
 		}
@@ -77,6 +94,9 @@
 			}
 			a:hover{
 				text-decoration: none;
+			}
+			@include media-breakpoint-down(sm){
+				padding-top:45px;
 			}
 		}
 	}

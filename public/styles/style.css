@@ -520,6 +520,9 @@ header {
         @media (max-width: 767px) {
           .About .About-wrapper .About-container-main p {
             width: 84%; } }
+      @media (max-width: 991px) {
+        .About .About-wrapper .About-container-main {
+          padding-right: 60px; } }
       @media (max-width: 767px) {
         .About .About-wrapper .About-container-main {
           padding: 50px 0 0;
@@ -537,6 +540,9 @@ header {
       .About .About-wrapper {
         flex-direction: column;
         align-items: flex-end; } }
+  @media (max-width: 991px) {
+    .About {
+      padding-top: 20px; } }
   @media (max-width: 767px) {
     .About {
       padding: 0; } }
@@ -640,7 +646,9 @@ header {
         @media (max-width: 991px) {
           .Advantages .Advantages-container .Advantages-row .Advantages-image {
             height: 160px;
-            margin-bottom: 23px; } }
+            margin-bottom: 23px; }
+            .Advantages .Advantages-container .Advantages-row .Advantages-image:first-of-type {
+              align-items: flex-end; } }
       .Advantages .Advantages-container .Advantages-row h5 {
         margin-bottom: 25px;
         text-transform: uppercase;
@@ -656,7 +664,11 @@ header {
           .Advantages .Advantages-container .Advantages-row p {
             width: 90%;
             margin: 0 auto;
-            font-size: 15px; } }
+            font-size: 15px;
+            margin-top: 10px; } }
+        @media (max-width: 767px) {
+          .Advantages .Advantages-container .Advantages-row p {
+            margin-top: 0; } }
       @media (max-width: 991px) {
         .Advantages .Advantages-container .Advantages-row {
           margin: 0 auto;
@@ -760,6 +772,11 @@ header {
   padding-top: 100px;
   margin: 0 auto;
   padding-bottom: 60px; }
+  @media (max-width: 767px) {
+    .contact .contact-wrapper .contact-wrapper-form {
+      background-color: #001C2D;
+      padding-top: 52px;
+      padding-bottom: 76px; } }
   .contact .contact-wrapper .contact-wrapper-form .contact-text h5 {
     line-height: 28px;
     margin-bottom: 20px; }
@@ -768,9 +785,18 @@ header {
     font-size: 18px;
     font-weight: 300;
     line-height: 25px; }
+    @media (max-width: 767px) {
+      .contact .contact-wrapper .contact-wrapper-form .contact-text p {
+        font-size: 14px; } }
+  @media (max-width: 767px) {
+    .contact .contact-wrapper .contact-wrapper-form .contact-text {
+      padding: 0; } }
   .contact .contact-wrapper .contact-wrapper-form form {
     background-color: #001C2D;
     padding: 40px 0 80px 40px; }
+    @media (max-width: 767px) {
+      .contact .contact-wrapper .contact-wrapper-form form {
+        padding: 0; } }
     .contact .contact-wrapper .contact-wrapper-form form label {
       color: #fff;
       font-weight: 400;
@@ -799,6 +825,9 @@ header {
       margin-top: 45px; }
     .contact .contact-wrapper .contact-wrapper-form form .textarea {
       max-width: 100%; }
+      @media (max-width: 767px) {
+        .contact .contact-wrapper .contact-wrapper-form form .textarea {
+          max-width: 95%; } }
 
 .contact .contact-wrapper .contact-text-secondary {
   margin: 0 auto; }
@@ -814,6 +843,9 @@ header {
     color: #308ECF; }
   .contact .contact-wrapper .contact-text-secondary a:hover {
     text-decoration: none; }
+  @media (max-width: 767px) {
+    .contact .contact-wrapper .contact-text-secondary {
+      padding-top: 45px; } }
 
 .contact .About {
   background-image: url("../../assets/agriculture-panels.png"); }
@@ -884,7 +916,7 @@ footer {
         margin-bottom: 55px; } }
 
 .footer-large .footer-links-wrapper .footer-contact {
-  padding: 120px 0 100px 0; }
+  padding: 80px 0 140px 0; }
   @media (max-width: 991px) {
     .footer-large .footer-links-wrapper .footer-contact .footer-contact-logo {
       display: flex;
