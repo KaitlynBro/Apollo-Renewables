@@ -13,6 +13,12 @@
 		    display: flex;
 		    margin-top: 45px;
 		    max-width: 100%;
+		    .Advantages-text{
+		    	min-height:220px;
+		    	@include media-breakpoint-down(md){
+		    		min-height: 140px;
+		    	}
+		    }
 		    .Advantages-col-left{
 		    	margin-right: 40px;
 		    	@include media-breakpoint-down(md){
@@ -28,7 +34,10 @@
 		    .Advantages-image{
 		    	display:flex;
 		    	justify-content:center;
-		    	height:200px;
+		    	min-height:200px;
+		    	img{
+		    		max-width:130px;
+		    	}
 		    	@include media-breakpoint-down(md){
 		    		height: 160px;
 		    		margin-bottom: 23px;
@@ -38,9 +47,8 @@
 		    	}
 		    }
 		    h5{
-		    	margin-bottom: 25px;
+		    	margin-bottom: 15px !important;
 		    	text-transform: uppercase;
-		    	width: 30%;
 		    	margin: 0 auto;
 		    	@include media-breakpoint-down(sm){
 		    		width: 100%;

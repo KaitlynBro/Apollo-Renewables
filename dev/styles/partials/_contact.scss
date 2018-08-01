@@ -126,15 +126,15 @@
 			}
 		}
 	}
-	.footer-large{
-		display: none;
-		@include media-breakpoint-down(lg){
-			display: block;
-		}
-	}
-	.footer-small{
-		@include media-breakpoint-down(lg){
-			display:none;
-		}
-	}
+	// .footer-large{
+	// 	display: none;
+	// 	@include media-breakpoint-down(lg){
+	// 		display: block;
+	// 	}
+	// }
+	// .footer-small{
+	// 	@include media-breakpoint-down(lg){
+	// 		display:none;
+	// 	}
+	// }
 }

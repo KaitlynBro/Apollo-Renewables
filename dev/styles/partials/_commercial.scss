@@ -48,17 +48,17 @@
 			}
 		}
 	}
-	.footer-large{
-		display: none;
-		@include media-breakpoint-down(md){
-			display: block;
-		}
-	}
-	.footer-small{
-		@include media-breakpoint-down(md){
-			display:none;
-		}
-	}
+	// .footer-large{
+	// 	display: none;
+	// 	@include media-breakpoint-down(md){
+	// 		display: block;
+	// 	}
+	// }
+	// .footer-small{
+	// 	@include media-breakpoint-down(md){
+	// 		display:none;
+	// 	}
+	// }
 }
 
 

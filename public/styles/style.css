@@ -253,7 +253,7 @@ header {
   background-image: url("../../assets/home-hero.jpg"); }
   @media (max-width: 991px) {
     .home header .header-title {
-      padding-top: 140px; }
+      padding-top: 230px; }
       .home header .header-title h1 {
         margin-bottom: 40px; } }
   .home header .header-title .header-buttons a:first-of-type {
@@ -308,12 +308,12 @@ header {
       .home .whySolar .whySolarBg {
         padding-bottom: 90px; } }
   .home .whySolar .whySolar-text-wrapper {
-    margin: 109px 0 90px 0; }
+    margin: 69px 0 90px 0; }
     .home .whySolar .whySolar-text-wrapper h2 {
       color: #308ECF;
       margin: 0 0 60px 0; }
     .home .whySolar .whySolar-text-wrapper h3 {
-      margin: 0 0 21px 0; }
+      margin: 0 0 12px 0; }
     .home .whySolar .whySolar-text-wrapper p {
       font-size: 21px;
       font-weight: 300;
@@ -341,7 +341,7 @@ header {
       letter-spacing: 0.5px;
       font-weight: 300;
       text-align: center;
-      margin: 58px 0 40px 0; }
+      margin: 14px 0 18px 0; }
       @media (max-width: 991px) {
         .home .whySolar .whySolar-calculator h4 {
           font-size: 16px;
@@ -362,7 +362,7 @@ header {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-top: 33px; }
+      margin-top: 9px; }
       .home .whySolar .whySolar-calculator .home-range-wrapper .range {
         max-width: 600px; }
       .home .whySolar .whySolar-calculator .home-range-wrapper p {
@@ -371,8 +371,7 @@ header {
         justify-content: space-evenly;
         font-weight: 300;
         font-size: 17px;
-        color: #001C2D;
-        padding-top: 25px; }
+        color: #001C2D; }
         @media (max-width: 767px) {
           .home .whySolar .whySolar-calculator .home-range-wrapper p {
             font-size: 10px; } }
@@ -435,16 +434,6 @@ header {
       .commercial .About .About-wrapper .About-container-image {
         background-image: url("../../assets/desk.png"); } }
 
-.commercial .footer-large {
-  display: none; }
-  @media (max-width: 991px) {
-    .commercial .footer-large {
-      display: block; } }
-
-@media (max-width: 991px) {
-  .commercial .footer-small {
-    display: none; } }
-
 @media (max-width: 767px) {
   .agriculture header .header-title .header-buttons {
     display: none; } }
@@ -462,6 +451,9 @@ header {
   .agriculture .whySolarBg .Features-container {
     padding-top: 0;
     padding-bottom: 0; }
+    @media (max-width: 767px) {
+      .agriculture .whySolarBg .Features-container .Features-row .Features-col img {
+        width: 120px; } }
 
 .agriculture .whySolar-text-wrapper {
   margin: 47px 0 17px 0; }
@@ -482,16 +474,6 @@ header {
       background-image: none; }
       .agriculture .About .About-wrapper .About-container-image {
         background-image: url("../../assets/agriculture-panels.png"); } }
-
-.agriculture .footer-large {
-  display: none; }
-  @media (max-width: 1199px) {
-    .agriculture .footer-large {
-      display: block; } }
-
-@media (max-width: 1199px) {
-  .agriculture .footer-small {
-    display: none; } }
 
 .About {
   background-repeat: no-repeat;
@@ -629,6 +611,11 @@ header {
       display: flex;
       margin-top: 45px;
       max-width: 100%; }
+      .Advantages .Advantages-container .Advantages-row .Advantages-text {
+        min-height: 220px; }
+        @media (max-width: 991px) {
+          .Advantages .Advantages-container .Advantages-row .Advantages-text {
+            min-height: 140px; } }
       .Advantages .Advantages-container .Advantages-row .Advantages-col-left {
         margin-right: 40px; }
         @media (max-width: 991px) {
@@ -642,7 +629,9 @@ header {
       .Advantages .Advantages-container .Advantages-row .Advantages-image {
         display: flex;
         justify-content: center;
-        height: 200px; }
+        min-height: 200px; }
+        .Advantages .Advantages-container .Advantages-row .Advantages-image img {
+          max-width: 130px; }
         @media (max-width: 991px) {
           .Advantages .Advantages-container .Advantages-row .Advantages-image {
             height: 160px;
@@ -650,9 +639,8 @@ header {
             .Advantages .Advantages-container .Advantages-row .Advantages-image:first-of-type {
               align-items: flex-end; } }
       .Advantages .Advantages-container .Advantages-row h5 {
-        margin-bottom: 25px;
+        margin-bottom: 15px !important;
         text-transform: uppercase;
-        width: 30%;
         margin: 0 auto; }
         @media (max-width: 767px) {
           .Advantages .Advantages-container .Advantages-row h5 {
@@ -867,16 +855,6 @@ header {
       .contact .About .About-wrapper .About-container-image {
         background-image: url("../../assets/agriculture-panels.png"); } }
 
-.contact .footer-large {
-  display: none; }
-  @media (max-width: 1199px) {
-    .contact .footer-large {
-      display: block; } }
-
-@media (max-width: 1199px) {
-  .contact .footer-small {
-    display: none; } }
-
 footer {
   background-color: #001C2D; }
   footer .footer-links-wrapper {
@@ -977,7 +955,7 @@ body {
   background-color: #308ECF;
   text-decoration: none;
   padding: 13px 59px;
-  border-radius: 20px;
+  border-radius: 10px;
   font-size: 19px;
   text-transform: uppercase;
   color: #fff;

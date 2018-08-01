@@ -20,6 +20,15 @@
         .Features-container{
         	padding-top: 0;
         	padding-bottom: 0;
+        	@include media-breakpoint-down(sm){
+        		.Features-row{
+        			.Features-col{
+        				img{
+        					width:120px;
+        				}
+        			}
+        		}
+        	}
         }
     }
 	.whySolar-text-wrapper{
@@ -48,17 +57,17 @@
 			}
 		}
 	}
-	.footer-large{
-		display: none;
-		@include media-breakpoint-down(lg){
-			display: block;
-		}
-	}
-	.footer-small{
-		@include media-breakpoint-down(lg){
-			display:none;
-		}
-	}
+	// .footer-large{
+	// 	display: none;
+	// 	@include media-breakpoint-down(lg){
+	// 		display: block;
+	// 	}
+	// }
+	// .footer-small{
+	// 	@include media-breakpoint-down(lg){
+	// 		display:none;
+	// 	}
+	// }
 }
 
 
