@@ -213,9 +213,14 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
       .header-nav .dropdown-menu a:last-of-type {
         padding-bottom: 55px; }
     .header-nav .dropdown-menu .dropdown-item.active {
-      background-color: #001C2D; }
+      background-color: #001C2D;
+      color: #EAA532; }
+    .header-nav .dropdown-menu .dropdown-item:hover {
+      background-color: #001C2D;
+      color: #EAA532; }
     .header-nav .dropdown-menu a.active-button:hover {
-      background-color: transparent; }
+      background-color: transparent;
+      color: #EAA532; }
 
 header {
   background-size: cover;
@@ -308,10 +313,10 @@ header {
       .home .whySolar .whySolarBg {
         padding-bottom: 90px; } }
   .home .whySolar .whySolar-text-wrapper {
-    margin: 69px 0 90px 0; }
+    margin: 69px 0 10px 0; }
     .home .whySolar .whySolar-text-wrapper h2 {
       color: #308ECF;
-      margin: 0 0 60px 0; }
+      margin: 0 0 10px 0; }
     .home .whySolar .whySolar-text-wrapper h3 {
       margin: 0 0 12px 0; }
     .home .whySolar .whySolar-text-wrapper p {

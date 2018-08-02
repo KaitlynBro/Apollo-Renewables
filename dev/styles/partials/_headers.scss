@@ -91,9 +91,15 @@
 		}
 		.dropdown-item.active{
 			background-color:$primary-colour;
+			color:$darkyellow;
+		}
+		.dropdown-item:hover{
+			background-color:$primary-colour;
+			color:$darkyellow;
 		}
 		a.active-button:hover{
 			background-color:transparent;
+			color:$darkyellow;
 		}
 	}
 }

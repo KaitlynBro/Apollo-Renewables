@@ -5,11 +5,3 @@ $(document).ready(function() {
         }
     });
 });
-
-$(document).ready(function() {
-    $("a").each(function() {
-        if (this.a == window.location.a) {
-            $(this).addClass("active-button");
-        }
-    });
-});
