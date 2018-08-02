@@ -451,9 +451,6 @@ header {
   .agriculture .whySolarBg .Features-container {
     padding-top: 0;
     padding-bottom: 0; }
-    @media (max-width: 767px) {
-      .agriculture .whySolarBg .Features-container .Features-row .Features-col img {
-        width: 120px; } }
 
 .agriculture .whySolar-text-wrapper {
   margin: 47px 0 17px 0; }
@@ -576,7 +573,9 @@ header {
           align-items: center; } }
     @media (max-width: 767px) {
       .Features .Features-container .Features-row .Features-col {
-        text-align: center; } }
+        text-align: center; }
+        .Features .Features-container .Features-row .Features-col img {
+          max-width: 100px; } }
     @media (max-width: 767px) {
       .Features .Features-container .Features-row .Features-order-0 {
         order: 0;
@@ -634,7 +633,7 @@ header {
           max-width: 130px; }
         @media (max-width: 991px) {
           .Advantages .Advantages-container .Advantages-row .Advantages-image {
-            height: 160px;
+            min-height: 100px;
             margin-bottom: 23px; }
             .Advantages .Advantages-container .Advantages-row .Advantages-image:first-of-type {
               align-items: flex-end; } }
@@ -679,7 +678,8 @@ header {
       text-align: center; }
       @media (max-width: 767px) {
         .about .about-intro .about-intro-wrapper p {
-          font-size: 12px; } }
+          font-size: 14px;
+          line-height: 25px; } }
     @media (max-width: 767px) {
       .about .about-intro .about-intro-wrapper {
         max-width: 90%; } }
@@ -706,6 +706,9 @@ header {
     margin: 0 auto;
     border-bottom: 2px solid #EBA634;
     padding-bottom: 75px; }
+    @media (max-width: 767px) {
+      .about .about-story .about-story-wrapper h2 {
+        margin-bottom: 25px; } }
     .about .about-story .about-story-wrapper p {
       font-weight: 300;
       font-size: 20px;
@@ -713,7 +716,8 @@ header {
       text-align: center; }
       @media (max-width: 767px) {
         .about .about-story .about-story-wrapper p {
-          font-size: 12px; } }
+          font-size: 14px;
+          line-height: 25px; } }
     @media (max-width: 767px) {
       .about .about-story .about-story-wrapper {
         padding-bottom: 43px;

@@ -20,15 +20,6 @@
         .Features-container{
         	padding-top: 0;
         	padding-bottom: 0;
-        	@include media-breakpoint-down(sm){
-        		.Features-row{
-        			.Features-col{
-        				img{
-        					width:120px;
-        				}
-        			}
-        		}
-        	}
         }
     }
 	.whySolar-text-wrapper{

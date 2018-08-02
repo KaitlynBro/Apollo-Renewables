@@ -16,7 +16,8 @@
 			    line-height: 33px;
 			    text-align: center;
 			    @include media-breakpoint-down(sm){
-			    	font-size: 12px;
+			    	font-size: 14px;
+			    	line-height:25px;
 			    }
 			}
 			@include media-breakpoint-down(sm){
@@ -47,13 +48,19 @@
 			margin: 0 auto;
 			border-bottom: 2px solid $tertiary-colour;
 			padding-bottom: 75px;
+			h2{
+				@include media-breakpoint-down(sm){
+					margin-bottom:25px;
+				}
+			}
 			p{
 				font-weight: 300;
 			    font-size: 20px;
 			    line-height: 33px;
 			    text-align: center;
 			    @include media-breakpoint-down(sm){
-			    	font-size: 12px;
+			    	font-size: 14px;
+			    	line-height:25px;
 			    }
 			}
 			@include media-breakpoint-down(sm){

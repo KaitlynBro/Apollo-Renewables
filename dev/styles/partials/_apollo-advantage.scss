@@ -39,7 +39,7 @@
 		    		max-width:130px;
 		    	}
 		    	@include media-breakpoint-down(md){
-		    		height: 160px;
+		    		min-height: 100px;
 		    		margin-bottom: 23px;
 		    		&:first-of-type{
 		    			align-items:flex-end;
