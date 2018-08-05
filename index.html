@@ -50,17 +50,21 @@
 			</div>
 			<div class="col-lg-12 whySolar-calculator">
 				<h4>Current Monthly Electricity Bill</h4>
-				<input type="number" required placeholder="$">
+				<input type="number" id="current-monthly-cost" required placeholder="$">
 				<div class="home-range-wrapper">
-				  <input type="range" min="1" value="50" class="range">
-				  <p><span>5y</span>
-				  <span>10y</span>
-				  <span>15y</span>
-				  <span>20y</span>
-				  <span>25y</span></p>
+					<input class="range" id="range" type="range" min="0" max="25" value="0" step="5">
+					<p>
+			            <span>0y</span>            
+			            <span>5y</span>
+			            <span>10y</span>
+			            <span>15y</span>
+			            <span>20y</span>
+			            <span>25y</span>
+				    </p>
 				</div>
-				<h4 class="home-range-title">Total Electricity Costs:</h4>
-				<p class="home-range-result">$44,000<!-- resulting price from electricity calculator lives here --></p>
+				<h4 class="home-range-title">Total Electricity Costs</h4>
+				<!-- resulting price from electricity calculator  lives here, remove placeholder number of 44,000 once this is built -->
+				<p class="home-range-result"></p>
 			</div>
 		</div>
 	</section>
@@ -175,7 +179,7 @@
 						</ul>
 						<ul>
 							<li>Head Office</li>
-							<li>Ottawa, Ontario  K1V 8C1</li>
+							<li>65 East Liberty St. Toronto Ontario M6K3R2</li>
 						</ul>
 					</div>
 					<div class="col-lg-2 col-md-6 footer-contact-logo">

@@ -340,7 +340,10 @@ header {
     max-width: 739px;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    /* Special styling for WebKit/Blink */
+    /* All the same stuff for Firefox */
+    /* All the same stuff for IE */ }
     .home .whySolar .whySolar-calculator h4 {
       color: #001C2D;
       letter-spacing: 0.5px;
@@ -392,6 +395,82 @@ header {
       @media (max-width: 767px) {
         .home .whySolar .whySolar-calculator p.home-range-result {
           font-size: 26px; } }
+    .home .whySolar .whySolar-calculator input[type=range] {
+      -webkit-appearance: none;
+      /* Hides the slider so that custom slider can be made */
+      width: 100%;
+      /* Specific width is required for Firefox. */
+      background: transparent;
+      /* Otherwise white in Chrome */ }
+    .home .whySolar .whySolar-calculator input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none; }
+    .home .whySolar .whySolar-calculator input[type=range]:focus {
+      outline: none;
+      /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */ }
+    .home .whySolar .whySolar-calculator input[type=range]::-ms-track {
+      width: 100%;
+      cursor: pointer;
+      /* Hides the slider so custom styles can be added */
+      background: transparent;
+      border-color: transparent;
+      color: transparent; }
+    .home .whySolar .whySolar-calculator input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 45px;
+      width: 16px;
+      border-radius: 10px;
+      background: #EBA634;
+      cursor: pointer;
+      margin-top: -14px;
+      /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */ }
+    .home .whySolar .whySolar-calculator input[type=range]::-moz-range-thumb {
+      height: 45px;
+      width: 16px;
+      border-radius: 10px;
+      background: #EBA634;
+      cursor: pointer; }
+    .home .whySolar .whySolar-calculator input[type=range]::-ms-thumb {
+      height: 45px;
+      width: 16px;
+      border-radius: 10px;
+      background: #EBA634;
+      cursor: pointer; }
+    .home .whySolar .whySolar-calculator input[type=range]::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 20px;
+      cursor: pointer;
+      background: #308ECF;
+      border-radius: 1.3px;
+      border: 0.2px solid #010101; }
+    .home .whySolar .whySolar-calculator input[type=range]:focus::-webkit-slider-runnable-track {
+      background: #367ebd; }
+    .home .whySolar .whySolar-calculator input[type=range]::-moz-range-track {
+      width: 100%;
+      height: 8.4px;
+      cursor: pointer;
+      background: #308ECF;
+      border-radius: 1.3px;
+      border: 0.2px solid #010101; }
+    .home .whySolar .whySolar-calculator input[type=range]::-ms-track {
+      width: 100%;
+      height: 8.4px;
+      cursor: pointer;
+      background: transparent;
+      border-color: transparent;
+      border-width: 16px 0;
+      color: transparent; }
+    .home .whySolar .whySolar-calculator input[type=range]::-ms-fill-lower {
+      background: #2a6495;
+      border: 0.2px solid #010101;
+      border-radius: 2.6px; }
+    .home .whySolar .whySolar-calculator input[type=range]:focus::-ms-fill-lower {
+      background: #308ECF; }
+    .home .whySolar .whySolar-calculator input[type=range]::-ms-fill-upper {
+      background: #308ECF;
+      border: 0.2px solid #010101;
+      border-radius: 2.6px; }
+    .home .whySolar .whySolar-calculator input[type=range]:focus::-ms-fill-upper {
+      background: #367ebd; }
 
 .home .About {
   background-image: url("../../assets/home-panels.png"); }
