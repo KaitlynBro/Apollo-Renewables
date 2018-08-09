@@ -830,16 +830,6 @@ header {
         .about .about-story .about-story-contact span.orange-text {
           display: block; } }
 
-.about .footer-large {
-  display: none; }
-  @media (max-width: 991px) {
-    .about .footer-large {
-      display: block; } }
-
-@media (max-width: 991px) {
-  .about .footer-small {
-    display: none; } }
-
 @media (max-width: 767px) {
   .contact header .header-title {
     padding: 163px 0 105px 0; } }
