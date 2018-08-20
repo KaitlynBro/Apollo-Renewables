@@ -225,7 +225,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 header {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: center center;
+  box-shadow: 10px 10px 10px 10px rgba(128, 128, 128, 0.1); }
   header .header-title {
     display: flex;
     flex-direction: column;
@@ -316,14 +317,15 @@ header {
     margin: 69px 0 10px 0; }
     .home .whySolar .whySolar-text-wrapper h2 {
       color: #308ECF;
-      margin: 0 0 10px 0; }
+      margin: 0 0 20px 0; }
     .home .whySolar .whySolar-text-wrapper h3 {
       margin: 0 0 12px 0; }
     .home .whySolar .whySolar-text-wrapper p {
       font-size: 21px;
       font-weight: 300;
       text-align: center;
-      line-height: 33px; }
+      line-height: 33px;
+      margin-bottom: 2em; }
     @media (max-width: 991px) {
       .home .whySolar .whySolar-text-wrapper {
         margin: 35px 0 19px 0; }
@@ -336,7 +338,7 @@ header {
           font-size: 12px;
           line-height: 20px; } }
   .home .whySolar .whySolar-calculator {
-    background-color: #606060;
+    background-color: #F7F7F7;
     max-width: 739px;
     display: flex;
     flex-direction: column;
@@ -383,6 +385,8 @@ header {
         @media (max-width: 767px) {
           .home .whySolar .whySolar-calculator .home-range-wrapper p {
             font-size: 10px; } }
+      .home .whySolar .whySolar-calculator .home-range-wrapper .home-range-wrapper-hide {
+        display: none; }
     .home .whySolar .whySolar-calculator .home-range-title {
       margin-bottom: 0; }
       @media (max-width: 767px) {
@@ -471,6 +475,8 @@ header {
       border-radius: 2.6px; }
     .home .whySolar .whySolar-calculator input[type=range]:focus::-ms-fill-upper {
       background: #367ebd; }
+    .home .whySolar .whySolar-calculator input[type=number] {
+      border: 1px solid #727272; }
 
 .home .About {
   background-image: url("../../assets/home-panels.png"); }
@@ -713,8 +719,6 @@ header {
         display: flex;
         justify-content: center;
         min-height: 200px; }
-        .Advantages .Advantages-container .Advantages-row .Advantages-image img {
-          max-width: 130px; }
         @media (max-width: 991px) {
           .Advantages .Advantages-container .Advantages-row .Advantages-image {
             min-height: 100px;
@@ -724,7 +728,11 @@ header {
       .Advantages .Advantages-container .Advantages-row h5 {
         margin-bottom: 15px !important;
         text-transform: uppercase;
-        margin: 0 auto; }
+        margin: 0 auto;
+        white-space: nowrap; }
+        @media (max-width: 1199px) {
+          .Advantages .Advantages-container .Advantages-row h5 {
+            font-size: 18px; } }
         @media (max-width: 767px) {
           .Advantages .Advantages-container .Advantages-row h5 {
             width: 100%;
@@ -770,7 +778,8 @@ header {
 
 .about .about-skyline {
   padding: 0;
-  width: 100%; }
+  width: 100%;
+  box-shadow: 10px 10px 10px 10px rgba(128, 128, 128, 0.1); }
   .about .about-skyline img {
     width: 100%; }
     @media (max-width: 767px) {
