@@ -980,7 +980,7 @@ footer {
       flex-direction: row;
       margin: 0 auto; }
       footer .footer-links-wrapper .footer-contact .footer-contact-list ul {
-        font-family: "MuseoSans-300";
+        font-family: "Roboto", sans-serif;
         font-size: 14px;
         list-style-type: none;
         color: #EBA634;
@@ -1055,7 +1055,7 @@ body {
       body h5 {
         font-size: 19px; } }
   @media (max-width: 767px) {
-    body h1, body h2, body h3, body h4, body h5, body p, body span, body .bttn {
+    body h1, body h2, body h3, body h4, body h5, body p, body span, body .bttn, body ul, body li {
       font-family: "Roboto", sans-serif; } }
 
 .bttn {

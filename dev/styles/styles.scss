@@ -117,7 +117,7 @@ body{
 		@include header-h5;
 	}
 	@include media-breakpoint-down(sm){
-		h1,h2,h3,h4,h5,p,span,.bttn{
+		h1,h2,h3,h4,h5,p,span,.bttn,ul,li{
 			font-family:$mobile-font;
 		}
 	}
