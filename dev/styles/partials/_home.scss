@@ -21,7 +21,7 @@
 			margin:69px 0 10px 0;
 			h2{
 				color:$secondary-colour;
-				margin: 0 0 20px 0;
+				margin: 0 0 40px 0;
 			}
 			h3{
 				margin:0 0 12px 0;
@@ -54,12 +54,14 @@
 			display: flex;
 		    flex-direction: column;
 		    align-items: center;
+		    padding: 20px 0;
 			h4{
 				color:$primary-colour;
 			    letter-spacing: 0.5px;
 			    font-weight: 300;
 			    text-align: center;
 			    margin:14px 0 18px 0;
+			    font-size:24px;
 			    @include media-breakpoint-down(md){
 			    	font-size: 16px;
 			    	margin: 35px 0 15px 0;

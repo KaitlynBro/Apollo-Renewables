@@ -1,4 +1,7 @@
 .Features{
+	background-image:url('../../assets/vines-bg.png');
+	background-repeat:no-repeat;
+	background-size:cover;
 	.Features-container{
 		display: flex;
 		flex-direction:column;
@@ -49,6 +52,10 @@
 			    }
 			}
 			.Features-col{
+				img:not(.Features-col-dollar){
+					width:210px;
+					height:120px;
+				}
 				@include media-breakpoint-down(sm){
 					text-align: center;
 					img{
@@ -85,6 +92,6 @@
 
 .home .Features{
 	.Features-container{
-		padding-bottom: 50px;
+		padding-bottom: 90px;
 	}
 }

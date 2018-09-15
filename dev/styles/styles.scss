@@ -1,6 +1,7 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 @import 'partials/setup';
 @import 'utilities/variables';
 @import 'partials/headers';
@@ -13,7 +14,6 @@
 @import 'partials/about';
 @import 'partials/contact';
 @import 'partials/footer';
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,300,400,500');
 
 // Mixins
 
@@ -115,6 +115,11 @@ body{
 	}
 	h5{
 		@include header-h5;
+	}
+	@include media-breakpoint-down(sm){
+		h1,h2,h3,h4,h5,p,span,.bttn{
+			font-family:$mobile-font;
+		}
 	}
 }
 

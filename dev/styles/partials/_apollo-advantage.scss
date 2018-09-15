@@ -1,7 +1,7 @@
 .Advantages{
 	background-color: $primary-colour;
 	.Advantages-container{
-		padding:80px 0 70px 0;
+		padding:60px 0 10px 0;
 		h2{
 			color:$tertiary-colour;
 		}
@@ -11,7 +11,7 @@
 		    flex-direction: row;
 		    text-align: center;
 		    display: flex;
-		    margin-top: 45px;
+		    margin-top: 25px;
 		    max-width: 100%;
 		    .Advantages-text{
 		    	min-height:220px;
@@ -34,7 +34,16 @@
 		    .Advantages-image{
 		    	display:flex;
 		    	justify-content:center;
-		    	min-height:200px;
+		    	min-height:145px;
+		    	.Advantages-image-lock{
+		    		height:115px;
+		    	}
+		    	.Advantages-image-ribbon{
+		    		height:130px;
+		    	}
+		    	.Advantages-image-key{
+		    		width:170px;
+		    	}
 		    	@include media-breakpoint-down(md){
 		    		min-height: 100px;
 		    		margin-bottom: 23px;
@@ -45,7 +54,7 @@
 		    }
 		    h5{
 		    	margin-bottom: 15px !important;
-		    	text-transform: uppercase;
+		    	text-transform: capitalize;
 		    	margin: 0 auto;
 		    	white-space: nowrap;
 		    	@include media-breakpoint-down(lg){
