@@ -995,7 +995,8 @@ footer {
     .footer-large .footer-links-wrapper .footer-links {
       flex-direction: column; }
       .footer-large .footer-links-wrapper .footer-links .footer-links-left {
-        margin-bottom: 55px; } }
+        margin-bottom: 55px;
+        font-family: "Roboto", sans-serif; } }
 
 .footer-large .footer-links-wrapper .footer-contact {
   padding: 80px 0 140px 0; }
@@ -1013,7 +1014,9 @@ footer {
         order: 1;
         text-align: center; }
         .footer-large .footer-links-wrapper .footer-contact .footer-contact-list ul {
-          padding: 0; } }
+          padding: 0; }
+        .footer-large .footer-links-wrapper .footer-contact .footer-contact-list li {
+          color: #EBA634; } }
 
 @media (max-width: 767px) {
   .footer-large .footer-links-wrapper {
@@ -1055,7 +1058,7 @@ body {
       body h5 {
         font-size: 19px; } }
   @media (max-width: 767px) {
-    body h1, body h2, body h3, body h4, body h5, body p, body span, body .bttn, body ul, body li {
+    body h1, body h2, body h3, body h4, body h5, body p, body span, body .bttn, body ul, body li, body a {
       font-family: "Roboto", sans-serif; } }
 
 .bttn {
@@ -1088,3 +1091,6 @@ body {
   .footer-button:hover {
     text-decoration: none;
     color: #fff; }
+  @media (max-width: 767px) {
+    .footer-button {
+      font-family: "Roboto", sans-serif; } }

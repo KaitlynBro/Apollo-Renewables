@@ -95,6 +95,9 @@
     	text-decoration: none;
     	color: $white;
     }
+    @include media-breakpoint-down(sm){
+    	font-family:$mobile-font;
+    }
 }
 
 // General Styles
@@ -117,7 +120,7 @@ body{
 		@include header-h5;
 	}
 	@include media-breakpoint-down(sm){
-		h1,h2,h3,h4,h5,p,span,.bttn,ul,li{
+		h1,h2,h3,h4,h5,p,span,.bttn,ul,li,a{
 			font-family:$mobile-font;
 		}
 	}

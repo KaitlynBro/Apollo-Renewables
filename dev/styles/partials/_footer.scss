@@ -43,6 +43,7 @@ footer{
 				flex-direction:column;
 				.footer-links-left{
 					margin-bottom:55px;
+					font-family:$mobile-font;
 				}
 			}
 		}
@@ -64,6 +65,9 @@ footer{
 					text-align: center;
 					ul{
 						padding: 0;
+					}
+					li{
+						color:$tertiary-colour;
 					}
 				}
 			}
