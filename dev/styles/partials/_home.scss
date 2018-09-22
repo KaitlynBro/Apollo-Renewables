@@ -88,8 +88,14 @@
 			    justify-content: center;
 			    align-items: center;
 			    margin-top:9px;
+			    @include media-breakpoint-down(sm){
+			    	width:75%;
+			    }
 			    .range{
 			    	max-width: 600px;
+			    	@include media-breakpoint-down(sm){
+			    		max-width:300px;
+			    	}
 			    }
 			    p{
 			    	width: 100%;
@@ -104,9 +110,6 @@
 			    }
 			    .home-range-wrapper-hide{
 			    	display:none;
-			    }
-			    @include media-breakpoint-down(sm){
-			    	width:90%;
 			    }
 			}
 			.home-range-title{
