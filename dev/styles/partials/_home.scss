@@ -71,7 +71,6 @@
 			    }
 			}
 			input{
-				max-width: 252px;
 			    width: 100%;
 			    height: 46px;
 			    border-radius: 10px;
@@ -80,6 +79,9 @@
 			    text-align: center;
 			    color:$primary-colour;
 			    outline: none;
+			}
+			[id="current-monthly-cost"]{
+				max-width:252px;
 			}
 			.home-range-wrapper{
 				width: 100%;
@@ -91,10 +93,11 @@
 			    @include media-breakpoint-down(sm){
 			    	width:75%;
 			    }
-			    .range{
+			    input{
 			    	max-width: 600px;
 			    	@include media-breakpoint-down(sm){
 			    		max-width:300px;
+			    		width:100%;
 			    	}
 			    }
 			    p{
@@ -130,6 +133,9 @@
 			  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
 			  width: 100%; /* Specific width is required for Firefox. */
 			  background: transparent; /* Otherwise white in Chrome */
+			  @include media-breakpoint-down(sm){
+			  	max-width:300px;
+			  }
 			}
 
 			input[type=range]::-webkit-slider-thumb {

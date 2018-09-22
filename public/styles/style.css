@@ -362,7 +362,6 @@ header {
           font-size: 16px;
           margin: 35px 0 15px 0; } }
     .home .whySolar .whySolar-calculator input {
-      max-width: 252px;
       width: 100%;
       height: 46px;
       border-radius: 10px;
@@ -371,6 +370,8 @@ header {
       text-align: center;
       color: #001C2D;
       outline: none; }
+    .home .whySolar .whySolar-calculator [id="current-monthly-cost"] {
+      max-width: 252px; }
     .home .whySolar .whySolar-calculator .home-range-wrapper {
       width: 100%;
       display: flex;
@@ -381,11 +382,12 @@ header {
       @media (max-width: 767px) {
         .home .whySolar .whySolar-calculator .home-range-wrapper {
           width: 75%; } }
-      .home .whySolar .whySolar-calculator .home-range-wrapper .range {
+      .home .whySolar .whySolar-calculator .home-range-wrapper input {
         max-width: 600px; }
         @media (max-width: 767px) {
-          .home .whySolar .whySolar-calculator .home-range-wrapper .range {
-            max-width: 300px; } }
+          .home .whySolar .whySolar-calculator .home-range-wrapper input {
+            max-width: 300px;
+            width: 100%; } }
       .home .whySolar .whySolar-calculator .home-range-wrapper p {
         width: 100%;
         display: flex;
@@ -417,6 +419,9 @@ header {
       /* Specific width is required for Firefox. */
       background: transparent;
       /* Otherwise white in Chrome */ }
+      @media (max-width: 767px) {
+        .home .whySolar .whySolar-calculator input[type=range] {
+          max-width: 300px; } }
     .home .whySolar .whySolar-calculator input[type=range]::-webkit-slider-thumb {
       -webkit-appearance: none; }
     .home .whySolar .whySolar-calculator input[type=range]:focus {
