@@ -55,6 +55,9 @@
 		    flex-direction: column;
 		    align-items: center;
 		    padding: 20px 0;
+		    @include media-breakpoint-down(sm){
+		    	max-width:370px;
+		    }
 			h4{
 				color:$primary-colour;
 			    letter-spacing: 0.5px;
@@ -101,6 +104,9 @@
 			    }
 			    .home-range-wrapper-hide{
 			    	display:none;
+			    }
+			    @include media-breakpoint-down(sm){
+			    	width:90%;
 			    }
 			}
 			.home-range-title{

@@ -347,6 +347,9 @@ header {
     /* Special styling for WebKit/Blink */
     /* All the same stuff for Firefox */
     /* All the same stuff for IE */ }
+    @media (max-width: 767px) {
+      .home .whySolar .whySolar-calculator {
+        max-width: 370px; } }
     .home .whySolar .whySolar-calculator h4 {
       color: #001C2D;
       letter-spacing: 0.5px;
@@ -389,6 +392,9 @@ header {
             font-size: 10px; } }
       .home .whySolar .whySolar-calculator .home-range-wrapper .home-range-wrapper-hide {
         display: none; }
+      @media (max-width: 767px) {
+        .home .whySolar .whySolar-calculator .home-range-wrapper {
+          width: 90%; } }
     .home .whySolar .whySolar-calculator .home-range-title {
       margin-bottom: 0; }
       @media (max-width: 767px) {
