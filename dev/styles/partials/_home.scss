@@ -85,34 +85,39 @@
 			}
 			.home-range-wrapper{
 				width: 100%;
+				max-width:630px;
+				position: relative;
 			    display: flex;
 			    flex-direction: column;
 			    justify-content: center;
 			    align-items: center;
 			    margin-top:9px;
+			    // Labels below slider
+			    .range-labels {
+			      margin: 0 -41px 0;
+			      padding: 0;
+			      list-style: none;
+			      
+			      li {
+			        position: relative;
+			        float: left;
+			        width: 118px;
+			        text-align: center;
+			        font-size: 14px;
+			        cursor: pointer;
+			      }
+			    }
 			    @include media-breakpoint-down(sm){
-			    	width:75%;
-			    }
-			    input{
-			    	max-width: 600px;
-			    	@include media-breakpoint-down(sm){
-			    		max-width:300px;
-			    		width:100%;
+			    	width:100%;
+			    	.range-labels{
+			    		margin: 0;
+			    		display:flex;
+			    		flex-direction:row;
+			    		justify-content:center;
+			    		li{
+			    			width:60px;
+			    		}
 			    	}
-			    }
-			    p{
-			    	width: 100%;
-			    	display: flex;
-			    	justify-content: space-evenly;
-			    	font-weight: 300;
-		    	    font-size: 17px;
-		    	    color: $primary-colour;
-		    	    @include media-breakpoint-down(sm){
-		    	    	font-size: 10px;
-		    	    }
-			    }
-			    .home-range-wrapper-hide{
-			    	display:none;
 			    }
 			}
 			.home-range-title{
@@ -134,7 +139,8 @@
 			  width: 100%; /* Specific width is required for Firefox. */
 			  background: transparent; /* Otherwise white in Chrome */
 			  @include media-breakpoint-down(sm){
-			  	max-width:300px;
+			  	max-width:320px;
+			  	width:100%;
 			  }
 			}
 

@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 
 $( document ).ready(function() {
-  var ELECTRICITY_GROWTH_RATE = 1.06;
+  var ELECTRICITY_GROWTH_RATE = 0.06;
   
   $("#range").on("input change", rangeUpdated);
   $("#current-monthly-cost").on("input change", costUpdated);
@@ -30,7 +30,8 @@ $( document ).ready(function() {
     if (!currentCost || !years) return;
     var costInSelectedYear = (currentCost * 12) * Math.pow(ELECTRICITY_GROWTH_RATE, years - 1);
     // https://math.stackexchange.com/questions/1997969/formula-for-calculating-cumulative-cost-when-price-increases-each-year
-    var totalCost = (currentCost * 12) * ((Math.pow(ELECTRICITY_GROWTH_RATE, years) - 1) / (ELECTRICITY_GROWTH_RATE - 1))
+    // var totalCost = (currentCost * 12) * ((Math.pow(ELECTRICITY_GROWTH_RATE, years) - 1) / (ELECTRICITY_GROWTH_RATE - 1))
+    var totalCost = (currentCost * 12) * years * (1 + (ELECTRICITY_GROWTH_RATE * years))
     return Math.round(totalCost)
   }
   

@@ -374,32 +374,34 @@ header {
       max-width: 252px; }
     .home .whySolar .whySolar-calculator .home-range-wrapper {
       width: 100%;
+      max-width: 630px;
+      position: relative;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       margin-top: 9px; }
+      .home .whySolar .whySolar-calculator .home-range-wrapper .range-labels {
+        margin: 0 -41px 0;
+        padding: 0;
+        list-style: none; }
+        .home .whySolar .whySolar-calculator .home-range-wrapper .range-labels li {
+          position: relative;
+          float: left;
+          width: 118px;
+          text-align: center;
+          font-size: 14px;
+          cursor: pointer; }
       @media (max-width: 767px) {
         .home .whySolar .whySolar-calculator .home-range-wrapper {
-          width: 75%; } }
-      .home .whySolar .whySolar-calculator .home-range-wrapper input {
-        max-width: 600px; }
-        @media (max-width: 767px) {
-          .home .whySolar .whySolar-calculator .home-range-wrapper input {
-            max-width: 300px;
-            width: 100%; } }
-      .home .whySolar .whySolar-calculator .home-range-wrapper p {
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        font-weight: 300;
-        font-size: 17px;
-        color: #001C2D; }
-        @media (max-width: 767px) {
-          .home .whySolar .whySolar-calculator .home-range-wrapper p {
-            font-size: 10px; } }
-      .home .whySolar .whySolar-calculator .home-range-wrapper .home-range-wrapper-hide {
-        display: none; }
+          width: 100%; }
+          .home .whySolar .whySolar-calculator .home-range-wrapper .range-labels {
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center; }
+            .home .whySolar .whySolar-calculator .home-range-wrapper .range-labels li {
+              width: 60px; } }
     .home .whySolar .whySolar-calculator .home-range-title {
       margin-bottom: 0; }
       @media (max-width: 767px) {
@@ -421,7 +423,8 @@ header {
       /* Otherwise white in Chrome */ }
       @media (max-width: 767px) {
         .home .whySolar .whySolar-calculator input[type=range] {
-          max-width: 300px; } }
+          max-width: 320px;
+          width: 100%; } }
     .home .whySolar .whySolar-calculator input[type=range]::-webkit-slider-thumb {
       -webkit-appearance: none; }
     .home .whySolar .whySolar-calculator input[type=range]:focus {
