@@ -891,13 +891,14 @@ header {
     line-height: 28px;
     margin-bottom: 20px; }
   .contact .contact-wrapper .contact-wrapper-form .contact-text p {
-    color: #fff;
+    color: #000;
     font-size: 18px;
     font-weight: 300;
     line-height: 25px; }
     @media (max-width: 767px) {
       .contact .contact-wrapper .contact-wrapper-form .contact-text p {
-        font-size: 14px; } }
+        font-size: 14px;
+        color: #fff; } }
   @media (max-width: 767px) {
     .contact .contact-wrapper .contact-wrapper-form .contact-text {
       padding: 0; } }
